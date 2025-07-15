@@ -1,0 +1,61 @@
+/* Choose Topic Page Styles */
+.choose-topic-container {
+  display: flex;
+  height: 100vh;
+  width: 100vw;
+}
+.choose-topic-left {
+  flex: 1;
+  background: #e0e0e0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.choose-topic-left h2 {
+  margin-top: 24px;
+  color: #333;
+  font-size: 2rem;
+  text-align: center;
+}
+.choose-topic-right {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.choose-btn {
+  width: 80%;
+  max-width: 320px;
+  padding: 24px 0;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  background: #27ae60;
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.choose-btn:hover {
+  background: #219150;
+}
+@media (max-width: 800px) {
+  .choose-topic-container {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .choose-topic-left, .choose-topic-right {
+    flex: none;
+    width: 100vw;
+    min-height: 40vh;
+    gap: 0;
+  }
+  .choose-topic-right {
+    gap: 16px;
+    padding-bottom: 32px;
+  }
+}
