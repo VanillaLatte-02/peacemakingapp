@@ -1,4 +1,5 @@
 import { FaRegAddressBook, FaRegSmile } from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 import './choosetopic.css'
 
 function ChooseTopic() {
@@ -11,10 +12,10 @@ function ChooseTopic() {
       </div>
       {/* Kolom Kanan */}
       <div className="choose-topic-right">
-        <button className="dashboard-btn choose-btn">Topik 1</button>
-        <button className="dashboard-btn choose-btn">Topik 2</button>
-        <button className="dashboard-btn choose-btn">Topik 3</button>
-        <button className="dashboard-btn choose-btn">Topik 4</button>
+        <Link to="/topic1/content1" className="dashboard-btn choose-btn">Topic 1</Link>
+        <button className="dashboard-btn choose-btn">Topic 2</button>
+        <button className="dashboard-btn choose-btn">Topic 3</button>
+        <button className ="dashboard-btn choose-btn">Topic 4</button>
       </div>
     </div>
   )
