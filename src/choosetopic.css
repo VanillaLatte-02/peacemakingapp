@@ -1,8 +1,15 @@
+html, body {
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
 /* Choose Topic Page Styles */
 .choose-topic-container {
   display: flex;
-  height: 100vh;
+  height: 100dvh;
   width: 100vw;
+  overflow: hidden;
 }
 .choose-topic-left {
   flex: 1;
@@ -11,6 +18,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .choose-topic-left h2 {
   margin-top: 24px;
@@ -23,39 +31,86 @@
   background: #fff;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 24px;
+  justify-content: stretch;
+  align-items: stretch;
 }
 .choose-btn {
-  width: 80%;
-  max-width: 320px;
+  width: 100%;
+  max-width: none;
+  margin: 0;
   padding: 24px 0;
-  font-size: 1.2rem;
-  border-radius: 12px;
+  display: block;
+  flex: 1;
+  font-size: 2rem;
+  border-radius: 0 !important;
   background: #27ae60;
   color: #fff;
   border: none;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.2s;
+  text-align: center;
 }
-.choose-btn:hover {
+.choose-btn-choose-topic:hover {
   background: #219150;
 }
-@media (max-width: 800px) {
+
+.arrow-btn-choose-topic {
+  background: #219150;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.arrow-btn:hover {
+  background: #145a32;
+}
+@media (max-width: 600px) {
   .choose-topic-container {
     flex-direction: column;
     height: 100vh;
+    overflow: hidden;
   }
-  .choose-topic-left, .choose-topic-right {
-    flex: none;
+  .choose-topic-left {
     width: 100vw;
-    min-height: 40vh;
+    height: 50vh;
+    min-height: 0;
+    flex: none;
     gap: 0;
   }
   .choose-topic-right {
-    gap: 16px;
-    padding-bottom: 32px;
+    width: 100vw;
+    height: 50vh;
+    min-height: 0;
+    flex: none;
+    gap: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    align-items: stretch;
+  }
+  .choose-btn {
+    width: 100vw;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    box-sizing: border-box;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

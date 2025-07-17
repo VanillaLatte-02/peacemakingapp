@@ -1,21 +1,26 @@
-import { FaRegAddressBook, FaRegSmile } from 'react-icons/fa'
+import { FaRegAddressBook, FaRegSmile, FaArrowLeft } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
+import choosetopictexts from './texts/choosetopictexts'
 import './choosetopic.css'
+import language from './language';
 
 function ChooseTopic() {
   return (
     <div className="choose-topic-container">
       {/* Kolom Kiri */}
       <div className="choose-topic-left">
+        <Link to="/" className="arrow-btn-choose-topic" title="Kembali ke Pilihan Topik">
+                    <FaArrowLeft />
+        </Link>
         <FaRegAddressBook size={64} color="#333" />
-        <h2>Choose Topic</h2>
+        <h2>{choosetopictexts[language].title}</h2>
       </div>
       {/* Kolom Kanan */}
       <div className="choose-topic-right">
-        <Link to="/topic1/content1" className="dashboard-btn choose-btn">Topic 1</Link>
-        <button className="dashboard-btn choose-btn">Topic 2</button>
-        <button className="dashboard-btn choose-btn">Topic 3</button>
-        <button className ="dashboard-btn choose-btn">Topic 4</button>
+        <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosetopictexts[language].button1}</Link>
+        <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosetopictexts[language].button2}</Link>
+        <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosetopictexts[language].button3}</Link>
+        <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosetopictexts[language].button4}</Link>
       </div>
     </div>
   )
