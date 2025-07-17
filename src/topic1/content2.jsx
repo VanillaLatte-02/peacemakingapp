@@ -1,12 +1,12 @@
-
+import { useState } from 'react'
 import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import maintexts from '../texts/maintexts'
+import topic1texts from '../texts/topic1texts'
 import '../topic1/topic1.css'
 
-const lang = 'id'
-
 export default function Content2() {
+  const [lang] = useState('id')
+
   return (
     <div className="topic1-container">
       {/* Baris Atas */}
@@ -15,7 +15,7 @@ export default function Content2() {
               <Link to="/choosetopic" className="arrow-btn" title="Kembali ke Pilihan Topik">
                 <FaArrowLeft />
               </Link>
-              <div className="topic1-title">Title content 2</div>
+              <div className="topic1-title">{topic1texts[lang].titlecontent2}</div>
             </div>
         <div className="topic1-arrows">
            <Link to="/topic1/content1" className="arrow-btn" title="Ke konten sebelumnya">

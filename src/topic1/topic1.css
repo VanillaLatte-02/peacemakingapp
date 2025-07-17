@@ -67,11 +67,8 @@
 
 .topic1-img {
   width: 100%;
-  max-width: 600px;
-  max-height: 50vh;
+  height: 100%;
   object-fit: contain;
-  border-radius: 16px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
 }
 
 .topic1-title-group {
@@ -112,13 +109,14 @@
   display: none;
 }
 
+
 @media (max-width: 600px) {
   .topic1-header {
     padding: 12px 8px;
   }
   .topic1-img {
-    max-width: 96vw;
-    max-height: 32vh;
+    width: 100%;
+    height: 100%;
   }
   .desktop-only {
     display: none;

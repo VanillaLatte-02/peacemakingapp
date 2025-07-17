@@ -1,12 +1,12 @@
-
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'
+import { useState } from 'react'
+import { FaArrowLeft, FaArrowRight, FaInfoCircle } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
-import maintexts from '../texts/maintexts'
+import topic1texts from '../texts/topic1texts'
 import '../topic1/topic1.css'
 
-const lang = 'id'
-
 export default function Content1() {
+  const [lang] = useState('id')
+
   return (
     <div className="topic1-container">
       <div className="topic1-header">
@@ -14,7 +14,7 @@ export default function Content1() {
           <Link to="/choosetopic" className="arrow-btn" title="Kembali ke Pilihan Topik">
             <FaArrowLeft />
           </Link>
-          <div className="topic1-title">Title content 1</div>
+          <div className="topic1-title">{topic1texts[lang].titlecontent1}</div>
         </div>
         {/* Arrows di header, hanya tampil di desktop */}
         <div className="topic1-arrows desktop-only">
@@ -34,16 +34,15 @@ export default function Content1() {
         />
         {/* Page Indicator di bawah gambar */}
       </div>
-        <div className="page-indicator">
-          {[1, 2, 3].map((num) => (
-            <span
-              key={num}
-              className={`dot${num === 1 ? ' active' : ''}`}
-            />
-          ))}
-        </div>
-
-       {/* Navigation Arrows for mobile interfacew */}
+      <div className="page-indicator">
+        {[1, 2, 3].map((num) => (
+          <span
+            key={num}
+            className={`dot${num === 1 ? ' active' : ''}`}
+          />
+        ))}
+      </div>
+      {/* Navigation Arrows for mobile interface */}
       <div className="topic1-arrows-bottom mobile-only">
         <Link to="" className="arrow-btn" title="Ke konten sebelumnya">
           <FaArrowLeft />
