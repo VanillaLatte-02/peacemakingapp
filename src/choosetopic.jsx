@@ -1,4 +1,5 @@
-import { FaRegAddressBook, FaRegSmile, FaArrowLeft } from 'react-icons/fa'
+import { FaRegAddressBook, FaRegSmile } from 'react-icons/fa'
+import { IoChevronBack } from 'react-icons/io5'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import choosetopictexts from './texts/choosetopictexts'
@@ -6,13 +7,13 @@ import './choosetopic.css'
 import language from './texts/language';  
 
 function ChooseTopic() {
-  const [lang, setLang] = useState('id')
+  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'id');
   return (
     <div className="choose-topic-container">
       {/* Kolom Kiri */}
       <div className="choose-topic-left">
-        <Link to="/" className="arrow-btn-choose-topic" title="Kembali ke Pilihan Topik">
-                    <FaArrowLeft />
+        <Link to="/" className="arrow-btn-choose-topic">
+          <IoChevronBack size={28} />
         </Link>
         <FaRegAddressBook size={64} color="#333" />
         <h2>{choosetopictexts[lang].title}</h2>

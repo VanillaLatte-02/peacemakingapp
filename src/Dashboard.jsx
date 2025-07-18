@@ -5,8 +5,14 @@ import maintexts from './texts/maintexts'
 import languageOptions from './texts/language'
 import './dashboard.css'
 const dropdownStyleClass = "dashboard-language-dropdown"
+
 export default function Dashboard() {
-  const [lang, setLang] = useState('id')
+  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'id');
+
+  const handleLangChange = (e) => {
+    setLang(e.target.value);
+    localStorage.setItem('lang', e.target.value);
+  };
 
   const appname = maintexts[lang].appname
   const mainbutton = maintexts[lang].mainbutton
@@ -21,7 +27,7 @@ export default function Dashboard() {
         <select
           className={dropdownStyleClass}
           value={lang}
-          onChange={e => setLang(e.target.value)}
+          onChange={handleLangChange}
         >
           {Object.keys(languageOptions).map(code => (
             <option key={code} value={code}>

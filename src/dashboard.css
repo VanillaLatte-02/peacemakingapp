@@ -12,17 +12,15 @@
 }
 html, body, #root, .dashboard-container {
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   margin: 0;
   padding: 0;
   background: #fff;
   box-sizing: border-box;
-}
-html, body, #root, .dashboard-container {
-  width: 100vw;
-  height: 100vh;
-  margin: 0;
-  padding: 0;
+  overflow: hidden;
+  touch-action: none;
+  overscroll-behavior: none;
+  position: fixed;
 }
 .dashboard-container {
   display: flex;
@@ -31,13 +29,15 @@ html, body, #root, .dashboard-container {
   padding: 0;
 }
 .dashboard-header {
-  flex: 3;
+  flex: 0 0 75%; 
   background: #e0e0e0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 75vh;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
 }
 .dashboard-header h2 {
   margin-top: 16px;
@@ -46,12 +46,15 @@ html, body, #root, .dashboard-container {
   text-align: center;
 }
 .dashboard-actions {
-  flex: 1;
+  flex: 0 0 25%;
   display: flex;
   justify-content: center;
   align-items: stretch;
   background: #fff;
-  height: 25vh;
+  min-height: 0;
+  height: 100%;
+  overflow: hidden;
+  border-top: 6px solid #fff;
 }
 .dashboard-btn {
   background: #27ae60;
@@ -82,27 +85,23 @@ html, body, #root, .dashboard-container {
   width: 300px;
   height: 60px;
 }
-@media (max-width: 600px) {
-  .dashboard-header {
-    height: 60vh;
-    flex: none;
-    padding: 32px 8px 16px 8px;
+@media (max-width: 375px) {
+  .dashboard-header,
+  .dashboard-actions {
+    min-height: 0;
+    height: 100%;
+    flex-shrink: 1;
+    overflow: hidden;
   }
   .dashboard-header h2 {
-    font-size: 1.2rem;
-  }
-  .dashboard-actions {
-    height: 40vh;
-    flex-direction: column;
-    gap: 0;
-    padding: 0;
+    font-size: 1rem;
   }
   .dashboard-btn-full {
     width: 100%;
     height: 100%;
     min-width: unset;
     padding: 0;
-    font-size: 1.2rem;
+    font-size: 1rem;
     border-radius: 0;
     margin: 0;
     display: flex;
@@ -111,13 +110,13 @@ html, body, #root, .dashboard-container {
     text-align: center;
   }
   .dashboard-language-dropdown {
-    top: 16px;
-    right: 16px;
-    width: 200px;
+    top: 32px;
+    right: 32px;
+    width: 140px;
     height: 50px;
-    font-size: 0.9rem;
-    padding: 4px 4px;
-    border-width: 3px;
+    font-size: 0.8rem;
+    padding: 2px 2px;
+    border-width: 2px;
   }
 }
 #root {
