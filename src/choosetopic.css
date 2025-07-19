@@ -1,3 +1,5 @@
+@import './colors.css';
+
 html, body {
   height: 100dvh;
   margin: 0;
@@ -13,7 +15,7 @@ html, body {
 }
 .choose-topic-left {
   flex: 1;
-  background: #e0e0e0;
+  background: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,13 +24,13 @@ html, body {
 }
 .choose-topic-left h2 {
   margin-top: 24px;
-  color: #333;
+  color: var(--text-color);
   font-size: 2rem;
   text-align: center;
 }
 .choose-topic-right {
   flex: 1;
-  background: #fff;
+  background: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: stretch;
@@ -36,18 +38,18 @@ html, body {
   gap: 0; /* hilangkan jarak antar tombol */
   height: 100%;
   border-top: none; 
-  border-left: 6px solid #fff; 
+  border-left: 6px solid var(--border-color); 
 }
 
 .choose-btn {
   width: 100%;
   height: 100%;
+  background: var(--button-color); /* button color */
+  color: var(--text-color); /* Text button color */
   margin: 0;
   padding: 0;
   font-size: 2rem;
   border-radius: 0 !important;
-  background: #27ae60;
-  color: #fff;
   border: none;
   font-weight: bold;
   cursor: pointer;
@@ -59,11 +61,11 @@ html, body {
   flex: 1;
 }
 .choose-btn-choose-topic:hover {
-  background: #219150;
+  background: var(--hover-button-color);
 }
 
 .arrow-btn-choose-topic {
-  background: #219150;
+  background: var(--hover-button-color);
   border: none;
   color: #fff;
   font-size: 1.5rem;
@@ -80,7 +82,7 @@ html, body {
 }
 
 .arrow-btn:hover {
-  background: #145a32;
+  background: var(--hover-button-color);
 }
 @media (max-width: 600px) {
   .choose-topic-container {
@@ -108,7 +110,7 @@ html, body {
     justify-content: stretch;
     align-items: stretch;
     border-left: none; 
-    border-top: 6px solid #fff; /* border top for mobile */
+    border-top: 6px solid var(--border-color); /* border top for mobile */
   }
   .choose-btn {
     width: 100vw;

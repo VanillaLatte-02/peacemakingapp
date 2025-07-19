@@ -45,18 +45,22 @@ export default function Content2() {
       </div>
       <div className="topic1-body" {...handlers} style={{ position: 'relative', flexDirection: 'column', justifyContent: 'center', alignItems: 'center' }}>
         {/* Dummy Icon */}
-        <MdChevronRight style={{ fontSize: 48, color: '#145a32', marginBottom: 16 }} />
+        <MdChevronRight className="body-title" />
         {/* Dummy Text */}
-        <div style={{ fontSize: 20, color: '#145a32', marginBottom: 24, textAlign: 'center' }}>
+        <div className="body-text">
           {topic1texts[lang].bodycontent2}
         </div>
         {/* 2 Button Navigasi */}
-        <div style={{ display: 'flex', gap: 16, marginBottom: 16 }}>
-          <button onClick={() => navigate('/topic1/content1')} style={{ padding: '12px 24px', fontSize: 16, borderRadius: 8, border: 'none', background: '#27ae60', color: '#fff', cursor: 'pointer' }}>{topic1texts[lang].button1content2}</button>
-          <button onClick={() => navigate('/topic1/content3')} style={{ padding: '12px 24px', fontSize: 16, borderRadius: 8, border: 'none', background: '#27ae60', color: '#fff', cursor: 'pointer' }}>{topic1texts[lang].button2content2}</button>
+        <div className="button-group">
+          <button onClick={() => navigate('/topic1/content1')} className="body-button">
+            {topic1texts[lang].button1content2}
+          </button>
+          <button onClick={() => navigate('/topic1/content3')} className="body-button">
+            {topic1texts[lang].button2content2}
+          </button>
         </div>
         {/* Button Info */}
-        <button onClick={() => setShowInfo(true)} style={{ padding: '10px 20px', fontSize: 15, borderRadius: 8, border: 'none', background: '#333', color: '#fff', cursor: 'pointer' }}>{topic1texts[lang].buttonInfoContent2}</button>
+        <button onClick={() => setShowInfo(true)} className="body-button">{topic1texts[lang].buttonInfoContent2}</button>
       </div>
       {/* Overlay Info*/}
       {showInfo && (
@@ -64,7 +68,7 @@ export default function Content2() {
           <div style={{ fontSize: 22, marginBottom: 24, textAlign: 'center', maxWidth: 320 }}>
             Overlay info
           </div>
-          <button onClick={() => setShowInfo(false)} style={{ padding: '10px 24px', fontSize: 16, borderRadius: 8, border: 'none', background: '#fff', color: '#145a32', cursor: 'pointer' }}>Tutup</button>
+          <button onClick={() => setShowInfo(false)} className="body-button">Tutup</button>
         </div>
       )}
       <div className="page-indicator">

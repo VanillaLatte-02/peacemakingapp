@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { useSwipeable } from 'react-swipeable'
 import topic1texts from '../texts/topic1texts'
 import '../topic1/topic1.css'
+import images from '../images';
 
 
 export default function Content1() {
@@ -45,8 +46,8 @@ export default function Content1() {
       </div>
       <div className="topic1-body" {...handlers}>
         <img
-          src="https://images.unsplash.com/photo-1506744038136-46273834b3fb"
-          alt="Contoh"
+          src={images[lang].slide4}
+          alt="Slide4 Image"
           className="topic1-img"
           draggable={false}
         />
