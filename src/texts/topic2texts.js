@@ -1,4 +1,4 @@
-const topic1texts = {
+const topic2texts = {
   id: {
     titlecontent: "KONFLIK SEBAGAI PELUANG",
   },

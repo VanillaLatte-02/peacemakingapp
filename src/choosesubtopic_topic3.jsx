@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react'
 import choosesubtopic_topic3 from './texts/choosesubtopic_topic3_texts'
 import './choosesubtopic_topic3.css'
-import language from './texts/language';  
+import language from './texts/language'; 
+ 
+// images lain
+import logo from './images/logoWhite.png';
 
 function ChooseSubTopic_Topic3() {
   const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'id');
@@ -15,7 +18,11 @@ function ChooseSubTopic_Topic3() {
         <Link to="/choosetopic" className="arrow-btn-choose-topic">
           <IoChevronBack size={28} />
         </Link>
-        <FaRegAddressBook size={64} color="#333" />
+        <img
+                  src={logo}
+                  alt="Peacemaking App Logo"
+                  className="choose-logo">
+                </img>
         <h2>{choosesubtopic_topic3[lang].title}</h2>
       </div>
       {/* Kolom Kanan */}

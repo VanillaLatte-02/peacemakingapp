@@ -7,13 +7,13 @@ import './topic1.css'
 import images from '../images';
 
 
-export default function Topic1Content2() {
+export default function Content1() {
   const lang = localStorage.getItem('lang') || 'id'
 
   const navigate = useNavigate();
   const handlers = useSwipeable({
-    onSwipedLeft: () => {},
-    onSwipedRight: () => navigate('/topic1/content1'), 
+    onSwipedLeft: () => navigate('/topic1/content2'),
+    onSwipedRight: () => {}, // isi jika ingin swipe kanan
     trackMouse: true
   });
   return (
@@ -26,35 +26,35 @@ export default function Topic1Content2() {
             }}>
             <MdChevronLeft />
           </Link>
-          <div className="topic1-title">{topic1texts[lang].titlecontent}</div>
+          <div className="topic1-title">{topic1texts[lang].titlecontent1}</div>
         </div>
         {/* Arrows di header, hanya tampil di desktop */}
         <div className="topic1-arrows desktop-only">
-          <Link to="/topic1/content1" className="arrow-btn-startend" >
+          <Link to="" className="arrow-btn-startend" >
             <MdKeyboardDoubleArrowLeft />
           </Link>
-          <Link to="/topic1/content1" className="arrow-btn" >
+          <Link to="" className="arrow-btn" >
             <MdChevronLeft  />
           </Link>
-          <Link to="" className="arrow-btn" >
+          <Link to="/topic1/content2" className="arrow-btn" >
             <MdChevronRight />
           </Link>
-          <Link to="" className="arrow-btn-startend" >
+          <Link to="/topic1/content3" className="arrow-btn-startend" >
             <MdKeyboardDoubleArrowRight />
           </Link>
         </div>
       </div>
       <div className="topic1-body" {...handlers}>
         <img
-          src={images[lang].slide5}
-          alt="Slide5 Image"
+          src={images[lang].slide4}
+          alt="Slide4 Image"
           className="topic1-img"
           draggable={false}
         />
         </div>
         {/* Page Indicator di bawah gambar */}
         <div className="page-indicator">
-          {[1, 2].map((num) => (
+          {[1, 2, 3].map((num) => (
             <span
               key={num}
               className={`dot${num === 1 ? ' active' : ''}`}
@@ -64,16 +64,16 @@ export default function Topic1Content2() {
 
        {/* Navigation Arrows for mobile interfacew */}
       <div className="topic1-arrows-bottom mobile-only">
-        <Link to="/topic1/content1" className="arrow-btn-startend" >
+        <Link to="" className="arrow-btn-startend" >
             <MdKeyboardDoubleArrowLeft />
           </Link>
         <Link to="" className="arrow-btn">
           <MdChevronLeft />
         </Link>
-        <Link to="/topic1/content1" className="arrow-btn" >
+        <Link to="/topic1/content2" className="arrow-btn" >
           <MdChevronRight  />
         </Link>
-        <Link to="" className="arrow-btn-startend" >
+        <Link to="/topic1/content3" className="arrow-btn-startend" >
           <MdKeyboardDoubleArrowRight  />
         </Link>
       </div>

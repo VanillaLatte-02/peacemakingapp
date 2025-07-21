@@ -4,7 +4,10 @@ import { Link } from 'react-router-dom'
 import maintexts from './texts/maintexts'
 import languageOptions from './texts/language'
 import './dashboard.css'
-const dropdownStyleClass = "dashboard-language-dropdown"
+
+// images lain
+import mainBackground from './images/mainBackground.png';
+import logo from './images/logoWhite.png';
 
 export default function Dashboard() {
   const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'id');
@@ -20,12 +23,16 @@ export default function Dashboard() {
   return (
     <div className="dashboard-container">
       {/* Baris 1 */}
-      <div className="dashboard-header" style={{ position: 'relative' }}>
-        <FaRegSmile size={48} color="#333" />
+      <div className="dashboard-header">
+        <img
+          src={logo}
+          alt="Peacemaking App Logo"
+          className="dashboard-logo">
+        </img>
         <h2>{appname}</h2>
         {/* Dropdown Language */}
         <select
-          className={dropdownStyleClass}
+          className={"dashboard-language-dropdown"}
           value={lang}
           onChange={handleLangChange}
         >

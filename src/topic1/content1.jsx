@@ -3,11 +3,11 @@ import { MdChevronLeft, MdChevronRight, MdKeyboardDoubleArrowLeft, MdKeyboardDou
 import { Link, useNavigate } from 'react-router-dom'
 import { useSwipeable } from 'react-swipeable'
 import topic1texts from '../texts/topic1texts'
-import '../topic1/topic1.css'
+import './topic1.css'
 import images from '../images';
 
 
-export default function Content1() {
+export default function Topic1Content1() {
   const lang = localStorage.getItem('lang') || 'id'
 
   const navigate = useNavigate();
@@ -26,7 +26,7 @@ export default function Content1() {
             }}>
             <MdChevronLeft />
           </Link>
-          <div className="topic1-title">{topic1texts[lang].titlecontent1}</div>
+          <div className="topic1-title">{topic1texts[lang].titlecontent}</div>
         </div>
         {/* Arrows di header, hanya tampil di desktop */}
         <div className="topic1-arrows desktop-only">
@@ -54,7 +54,7 @@ export default function Content1() {
         </div>
         {/* Page Indicator di bawah gambar */}
         <div className="page-indicator">
-          {[1, 2, 3].map((num) => (
+          {[1, 2].map((num) => (
             <span
               key={num}
               className={`dot${num === 1 ? ' active' : ''}`}

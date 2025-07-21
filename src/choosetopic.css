@@ -1,7 +1,6 @@
 @import './colors.css';
 
 html, body {
-  height: 100dvh;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -9,21 +8,21 @@ html, body {
 /* Choose Topic Page Styles */
 .choose-topic-container {
   display: flex;
-  height: 100dvh;
-  width: 100vw;
   overflow: hidden;
 }
 .choose-topic-left {
   flex: 1;
-  background: var(--background-color);
+  /* background: var(--background-color); */
+  background-image: url('../images/mainBackground.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: relative;
 }
 .choose-topic-left h2 {
-  margin-top: 24px;
   color: var(--text-color);
   font-size: 2rem;
   text-align: center;
@@ -40,6 +39,12 @@ html, body {
   border-top: none; 
   border-left: 6px solid var(--border-color); 
 }
+
+.choose-logo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
 
 .choose-btn {
   width: 100%;
@@ -123,5 +128,14 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .choose-topic-left h2 {
+    font-size: 0.5rem;
+  }
+
+  .choose-logo {
+    width: 100px;
+    height: 100px;
   }
 }

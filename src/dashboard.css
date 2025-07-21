@@ -12,7 +12,7 @@
   justify-content: center;
   text-align: center;
 }
-html, body, #root, .dashboard-container {
+html, body, #root, .dashboard-container{
   width: 100vw;
   height: 100dvh;
   margin: 0;
@@ -22,8 +22,13 @@ html, body, #root, .dashboard-container {
   overflow: hidden;
   touch-action: none;
   overscroll-behavior: none;
-  position: fixed;
 }
+
+.dashboard-logo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
 .dashboard-container {
   display: flex;
   flex-direction: column;
@@ -31,8 +36,11 @@ html, body, #root, .dashboard-container {
   padding: 0;
 }
 .dashboard-header {
+  background-image: url('./images/mainBackground.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
   flex: 0 0 75%; 
-  background: var(--background-color);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,9 +50,8 @@ html, body, #root, .dashboard-container {
   overflow: hidden;
 }
 .dashboard-header h2 {
-  margin-top: 16px;
-  color: var(--text-color);
-  font-size: 2rem;
+  color: var(--text2-color);
+  font-size: 3rem;
   text-align: center;
 }
 .dashboard-actions {
@@ -82,7 +89,7 @@ html, body, #root, .dashboard-container {
   font-size: 1.6rem;
   border-radius: 4px;
   border: 3px solid var(--border-color);
-  background: var(--hover-button-color);
+  background: var(--button-color);
   z-index: 2;
   width: 300px;
   height: 60px;
@@ -90,13 +97,14 @@ html, body, #root, .dashboard-container {
 @media (max-width: 375px) {
   .dashboard-header,
   .dashboard-actions {
+    background-size: auto;
     min-height: 0;
     height: 100%;
     flex-shrink: 1;
     overflow: hidden;
   }
   .dashboard-header h2 {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
   .dashboard-btn-full {
     width: 100%;
@@ -119,6 +127,11 @@ html, body, #root, .dashboard-container {
     font-size: 0.8rem;
     padding: 2px 2px;
     border-width: 2px;
+  }
+  
+  .dashboard-logo {
+    width: 200px;
+    height: 200px;
   }
 }
 #root {

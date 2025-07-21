@@ -3,7 +3,7 @@ import { MdChevronLeft, MdChevronRight, MdKeyboardDoubleArrowLeft, MdKeyboardDou
 import { Link, useNavigate } from 'react-router-dom'
 import { useSwipeable } from 'react-swipeable'
 import topic1texts from '../texts/topic1texts'
-import '../topic1/topic1.css'
+import './topic1.css'
 
 export default function Content3() {
   const lang = localStorage.getItem('lang') || 'id'

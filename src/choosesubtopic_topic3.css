@@ -28,6 +28,13 @@ html, body {
   font-size: 2rem;
   text-align: center;
 }
+
+.choose-logo {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+  }
+
 .choose-topic-right {
   flex: 1;
   background: var(--background-color);
@@ -123,5 +130,10 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .choose-logo {
+    width: 100px;
+    height: 100px;
   }
 }
