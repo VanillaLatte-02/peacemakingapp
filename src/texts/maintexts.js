@@ -1,11 +1,11 @@
 const maintexts = {
   id: {
-    appname: "Aplikasi Peacemaking",
-    mainbutton: "Pribadi"
+    appname: "APLIKASI PEACEMAKING",
+    mainbutton: "PRIBADI"
   },
   en: {
-    appname: "Peacemaking App",
-    mainbutton: "Personal"
+    appname: "PEACEMAKING APP",
+    mainbutton: "PERSONAL"
   }
 }
 

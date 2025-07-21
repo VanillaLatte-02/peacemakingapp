@@ -1,4 +1,4 @@
 export default {
-  id: "Bahasa Indonesia",
-  en: "English"
+  id: "BAHASA INDONESIA",
+  en: "ENGLISH",
 }

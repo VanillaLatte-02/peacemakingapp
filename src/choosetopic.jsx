@@ -22,7 +22,7 @@ function ChooseTopic() {
       <div className="choose-topic-right">
         <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosetopictexts[lang].button1}</Link>
         <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosetopictexts[lang].button2}</Link>
-        <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosetopictexts[lang].button3}</Link>
+        <Link to="/choosesubtopic_topic3" className="dashboard-btn choose-btn">{choosetopictexts[lang].button3}</Link>
         <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosetopictexts[lang].button4}</Link>
       </div>
     </div>

@@ -2,11 +2,11 @@
   --primary-color: #3498db;
   --secondary-color: #2ecc71; /* button color */
   --text-color: #333;
-  /* --background-color: #e0e0e0; */
-  --background-color: #3c3f44;
+  --background-color: #e0e0e0;
+  /* --background-color: #3c3f44; */
   --border-color: #fff;
   --hover-button-color: #219150;
-  --button-color: #8f2191;
+  --button-color: #219150;
 
   --content-header-color: #2ecc71; 
   --content-footer-color: #2ecc71; 
