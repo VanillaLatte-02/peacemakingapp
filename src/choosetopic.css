@@ -89,7 +89,7 @@ html, body {
 .arrow-btn:hover {
   background: var(--hover-button-color);
 }
-@media (max-width: 600px) {
+@media (max-width: 375px) {
   .choose-topic-container {
     flex-direction: column;
     height: 100vh;

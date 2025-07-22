@@ -12,8 +12,8 @@ export default function Topic2Content4() {
 
   const navigate = useNavigate();
   const handlers = useSwipeable({
-    onSwipedLeft: () => navigate('/topic2/content3'),
-    onSwipedRight: () => navigate('/topic2/content5'),
+    onSwipedLeft: () => navigate('/topic2/content5'),
+    onSwipedRight: () => navigate('/topic2/content3'),
     trackMouse: true
   });
   return (
@@ -75,7 +75,7 @@ export default function Topic2Content4() {
         <Link to="/topic2/content3" className="arrow-btn">
           <MdChevronLeft />
         </Link>
-        <Link to="/topic2/content5" className="arrow-btn" >
+        <Link to="/topic2/content5" className="arrow-btn">
           <MdChevronRight  />
         </Link>
         <Link to="/topic2/content12" className="arrow-btn-startend" >

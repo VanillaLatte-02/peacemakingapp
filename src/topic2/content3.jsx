@@ -12,8 +12,8 @@ export default function Topic2Content3() {
 
   const navigate = useNavigate();
   const handlers = useSwipeable({
-    onSwipedLeft: () => navigate('/topic2/content2'),
-    onSwipedRight: () => navigate('/topic2/content4'),
+    onSwipedLeft: () => navigate('/topic2/content4'),
+    onSwipedRight: () => navigate('/topic2/content2'),
     trackMouse: true
   });
   return (

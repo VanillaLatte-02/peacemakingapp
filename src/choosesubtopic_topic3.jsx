@@ -15,7 +15,7 @@ function ChooseSubTopic_Topic3() {
     <div className="choose-topic-container">
       {/* Kolom Kiri */}
       <div className="choose-topic-left">
-        <Link to="/choosetopic" className="arrow-btn-choose-topic">
+        <Link to="/content1_topic3" className="arrow-btn-choose-topic">
           <IoChevronBack size={28} />
         </Link>
         <img
@@ -27,10 +27,10 @@ function ChooseSubTopic_Topic3() {
       </div>
       {/* Kolom Kanan */}
       <div className="choose-topic-right">
-        <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosesubtopic_topic3[lang].button1}</Link>
-        <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosesubtopic_topic3[lang].button2}</Link>
-        <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosesubtopic_topic3[lang].button3}</Link>
-        <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosesubtopic_topic3[lang].button4}</Link>
+        <Link to="/subtopic1/content1" className="dashboard-btn choose-btn">{choosesubtopic_topic3[lang].button1}</Link>
+        <Link to="/subtopic2/content1" className="dashboard-btn choose-btn">{choosesubtopic_topic3[lang].button2}</Link>
+        <Link to="/subtopic3/content1" className="dashboard-btn choose-btn">{choosesubtopic_topic3[lang].button3}</Link>
+        <Link to="/subtopic4/content1" className="dashboard-btn choose-btn">{choosesubtopic_topic3[lang].button4}</Link>
       </div>
     </div>
   )
