@@ -36,7 +36,7 @@ export default function Topic2Content2() {
           <Link to="/topic2/content1" className="arrow-btn" >
             <MdChevronLeft  />
           </Link>
-          <Link to="/topic2/content2" className="arrow-btn" >
+          <Link to="/topic2/content3" className="arrow-btn" >
             <MdChevronRight />
           </Link>
           <Link to="/topic2/content12" className="arrow-btn-startend" >
@@ -53,24 +53,29 @@ export default function Topic2Content2() {
         />
         </div>
         {/* Page Indicator di bawah gambar */}
-        <div className="page-indicator">
-          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
-            <span
-              key={num}
-              className={`dot${num === 1 ? ' active' : ''}`}
-            />
-          ))}
-      </div>
+        {(() => {
+          const activePage = 2;
+          return (
+            <div className="page-indicator">
+              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
+                <span
+                  key={num}
+                  className={`dot${num === activePage ? ' active' : ''}`}
+                />
+              ))}
+            </div>
+          );
+        })()}
 
        {/* Navigation Arrows for mobile interfacew */}
       <div className="topic2-arrows-bottom mobile-only">
         <Link to="/topic2/content1" className="arrow-btn-startend" >
             <MdKeyboardDoubleArrowLeft />
           </Link>
-        <Link to="/topic2/content3" className="arrow-btn">
+        <Link to="/topic2/content1" className="arrow-btn">
           <MdChevronLeft />
         </Link>
-        <Link to="/topic2/content1" className="arrow-btn" >
+        <Link to="/topic2/content3" className="arrow-btn" >
           <MdChevronRight  />
         </Link>
         <Link to="/topic2/content12" className="arrow-btn-startend" >

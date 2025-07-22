@@ -7,4 +7,4 @@ const topic2texts = {
   }
 }
 
-export default topic1texts
+export default topic2texts

@@ -7,13 +7,13 @@ import './topic2.css'
 import images from '../images';
 
 
-export default function Topic2Content4() {
+export default function Topic2Content9() {
   const lang = localStorage.getItem('lang') || 'id'
 
   const navigate = useNavigate();
   const handlers = useSwipeable({
-    onSwipedLeft: () => navigate('/topic2/content3'),
-    onSwipedRight: () => navigate('/topic2/content5'),
+    onSwipedLeft: () => navigate('/topic2/content8'),
+    onSwipedRight: () => navigate('/topic2/content10'),
     trackMouse: true
   });
   return (
@@ -33,10 +33,10 @@ export default function Topic2Content4() {
           <Link to="/topic2/content1" className="arrow-btn-startend" >
             <MdKeyboardDoubleArrowLeft />
           </Link>
-          <Link to="/topic2/content3" className="arrow-btn" >
+          <Link to="/topic2/content8" className="arrow-btn" >
             <MdChevronLeft  />
           </Link>
-          <Link to="/topic2/content5" className="arrow-btn" >
+          <Link to="/topic2/content10" className="arrow-btn" >
             <MdChevronRight />
           </Link>
           <Link to="/topic2/content12" className="arrow-btn-startend" >
@@ -46,15 +46,15 @@ export default function Topic2Content4() {
       </div>
       <div className="topic2-body" {...handlers}>
         <img
-          src={images[lang].slide10}
-          alt="Slide10 Image"
+          src={images[lang].slide15}
+          alt="Slide15 Image"
           className="topic2-img"
           draggable={false}
         />
         </div>
         {/* Page Indicator di bawah gambar */}
-       {(() => {
-          const activePage = 4;
+        {(() => {
+          const activePage = 9;
           return (
             <div className="page-indicator">
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
@@ -72,10 +72,10 @@ export default function Topic2Content4() {
         <Link to="/topic2/content1" className="arrow-btn-startend" >
             <MdKeyboardDoubleArrowLeft />
           </Link>
-        <Link to="/topic2/content3" className="arrow-btn">
+        <Link to="/topic2/content8" className="arrow-btn">
           <MdChevronLeft />
         </Link>
-        <Link to="/topic2/content5" className="arrow-btn" >
+        <Link to="/topic2/content10" className="arrow-btn" >
           <MdChevronRight  />
         </Link>
         <Link to="/topic2/content12" className="arrow-btn-startend" >

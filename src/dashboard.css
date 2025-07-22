@@ -93,6 +93,7 @@ html, body, #root, .dashboard-container{
   z-index: 2;
   width: 300px;
   height: 60px;
+  color: var(--text-color);
 }
 @media (max-width: 375px) {
   .dashboard-header,

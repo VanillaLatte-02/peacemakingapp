@@ -39,7 +39,7 @@ export default function Topic1Content1() {
           <Link to="/topic1/content2" className="arrow-btn" >
             <MdChevronRight />
           </Link>
-          <Link to="/topic1/content3" className="arrow-btn-startend" >
+          <Link to="/topic1/content2" className="arrow-btn-startend" >
             <MdKeyboardDoubleArrowRight />
           </Link>
         </div>
@@ -53,14 +53,19 @@ export default function Topic1Content1() {
         />
         </div>
         {/* Page Indicator di bawah gambar */}
-        <div className="page-indicator">
-          {[1, 2].map((num) => (
-            <span
-              key={num}
-              className={`dot${num === 1 ? ' active' : ''}`}
-            />
-          ))}
-      </div>
+        {(() => {
+          const activePage = 1;
+          return (
+            <div className="page-indicator">
+              {[1, 2].map((num) => (
+                <span
+                  key={num}
+                  className={`dot${num === activePage ? ' active' : ''}`}
+                />
+              ))}
+            </div>
+          );
+        })()}
 
        {/* Navigation Arrows for mobile interfacew */}
       <div className="topic1-arrows-bottom mobile-only">
@@ -73,7 +78,7 @@ export default function Topic1Content1() {
         <Link to="/topic1/content2" className="arrow-btn" >
           <MdChevronRight  />
         </Link>
-        <Link to="/topic1/content3" className="arrow-btn-startend" >
+        <Link to="/topic1/content2" className="arrow-btn-startend" >
           <MdKeyboardDoubleArrowRight  />
         </Link>
       </div>

@@ -5,6 +5,7 @@ import { useSwipeable } from 'react-swipeable'
 import topic1texts from '../texts/topic1texts'
 import './topic1.css'
 import images from '../images';
+import { act } from 'react'
 
 
 export default function Topic1Content2() {
@@ -53,24 +54,29 @@ export default function Topic1Content2() {
         />
         </div>
         {/* Page Indicator di bawah gambar */}
-        <div className="page-indicator">
-          {[1, 2].map((num) => (
-            <span
-              key={num}
-              className={`dot${num === 1 ? ' active' : ''}`}
-            />
-          ))}
-      </div>
+        {(() => {
+          const activePage = 2;
+          return (
+            <div className="page-indicator">
+              {[1, 2].map((num) => (
+                <span
+                  key={num}
+                  className={`dot${num === activePage ? ' active' : ''}`}
+                />
+              ))}
+            </div>
+          );
+        })()}
 
        {/* Navigation Arrows for mobile interfacew */}
       <div className="topic1-arrows-bottom mobile-only">
         <Link to="/topic1/content1" className="arrow-btn-startend" >
             <MdKeyboardDoubleArrowLeft />
           </Link>
-        <Link to="" className="arrow-btn">
+        <Link to="/topic1/content1" className="arrow-btn">
           <MdChevronLeft />
         </Link>
-        <Link to="/topic1/content1" className="arrow-btn" >
+        <Link to="" className="arrow-btn" >
           <MdChevronRight  />
         </Link>
         <Link to="" className="arrow-btn-startend" >
