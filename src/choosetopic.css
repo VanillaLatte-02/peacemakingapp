@@ -8,12 +8,13 @@ html, body {
 /* Choose Topic Page Styles */
 .choose-topic-container {
   display: flex;
+  height: 100dvh;
+  width: 100vw;
   overflow: hidden;
 }
 .choose-topic-left {
   flex: 1;
-  /* background: var(--background-color); */
-  background-image: url('../images/mainBackground.png');
+  background: var(--background-color);
   background-size: cover;
   background-position: center;
   position: relative;
@@ -27,6 +28,7 @@ html, body {
   font-size: 2rem;
   text-align: center;
 }
+
 .choose-topic-right {
   flex: 1;
   background: var(--background-color);
@@ -34,7 +36,7 @@ html, body {
   flex-direction: column;
   justify-content: stretch;
   align-items: stretch;
-  gap: 0; /* hilangkan jarak antar tombol */
+  gap: 0; 
   height: 100%;
   border-top: none; 
   border-left: 6px solid var(--border-color); 
@@ -89,53 +91,125 @@ html, body {
 .arrow-btn:hover {
   background: var(--hover-button-color);
 }
-@media (max-width: 375px) {
+
+ .desktop-only {
+    display: flex;
+  }
+  .mobile-only {
+    display: none;
+  }
+
+@media (max-width: 600px) {
+  .choose-logo {
+    width: 120px;
+    height: 120px;
+  }
+  
   .choose-topic-container {
     flex-direction: column;
-    height: 100vh;
-    overflow: hidden;
-  }
-  .choose-topic-left {
-    width: 100vw;
-    height: 50vh;
-    min-height: 0;
-    flex: none;
-    gap: 0;
-  }
-  .choose-topic-right {
-    width: 100vw;
-    height: 50vh;
-    min-height: 0;
-    flex: none;
-    gap: 0;
     padding-bottom: 0;
+    height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
     overflow: hidden;
-    display: flex;
+  }
+
+  .choose-topic-left {
+    flex: none;
+    height: 50vh;   
+    min-height: 0;
+    max-height: 50vh;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+
+  .choose-topic-bottom.mobile-only {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 50vh;    
+    max-height: 50vh;
+    min-height: 0;
+    display: flex !important;
     flex-direction: column;
-    justify-content: stretch;
-    align-items: stretch;
-    border-left: none; 
-    border-top: 6px solid var(--border-color); /* border top for mobile */
+    z-index: 10;
+    border-top: 6px solid var(--border-color);
+    background: var(--background-color);
+    padding: 0;
   }
   .choose-btn {
+    flex: 1 1 0;
+    min-height: 0;
+    height: auto;
     width: 100vw;
-    max-width: none;
     margin: 0;
-    padding: 0;
-    font-size: 1rem;
+    border-radius: 0 !important;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-sizing: border-box;
-    flex: 1;
+  }
+  .choose-btn:last-child {
+    border-bottom: none;
+  }
+  .desktop-only {
+    display: none !important;
+  }
+  .mobile-only {
+    display: flex !important;
+  }
+}
+
+@media (min-width:601px) and (max-width: 1024px) {
+   .choose-logo {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .choose-topic-container {
+    flex-direction: column;
+    padding-bottom: 0;
+    height: 100vh;
+    min-height: 100vh;
+  }
+  .choose-topic-left {
+    flex: none;
+    height: 50vh; /* Setengah layar */
+    min-height: 0;
+    max-height: 50vh;
+  }
+  .choose-topic-bottom.mobile-only {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 50vh; /* Setengah layar */
+    max-height: 50vh;
+    min-height: 0;
+    display: flex !important;
+    flex-direction: column;
+    z-index: 10;
+    border-top: 6px solid var(--border-color);
+    background: var(--background-color);
+    padding: 0;
+  }
+  .choose-btn {
+    flex: 1 1 0;
+    min-height: 0;
+    height: auto;
+    width: 100vw;
+    margin: 0;
+    border-radius: 0 !important;
+    border-bottom: 1px solid var(--border-color);
+    font-size: 1.2rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-
-  .choose-topic-left h2 {
-    font-size: 0.5rem;
-  }
-
-  .choose-logo {
-    width: 100px;
-    height: 100px;
+  .choose-btn:last-child {
+    border-bottom: none;
   }
 }

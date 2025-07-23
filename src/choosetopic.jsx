@@ -32,7 +32,14 @@ function ChooseTopic() {
         <h2>{choosetopictexts[lang].title}</h2>
       </div>
       {/* Kolom Kanan */}
-      <div className="choose-topic-right">
+      <div className="choose-topic-right desktop-only">
+        <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosetopictexts[lang].button1}</Link>
+        <Link to="/topic2/content1" className="dashboard-btn choose-btn">{choosetopictexts[lang].button2}</Link>
+        <Link to="/content1_topic3" className="dashboard-btn choose-btn">{choosetopictexts[lang].button3}</Link>
+        <Link to="/topic4/content1" className="dashboard-btn choose-btn">{choosetopictexts[lang].button4}</Link>
+      </div>
+
+       <div className="choose-topic-bottom mobile-only">
         <Link to="/topic1/content1" className="dashboard-btn choose-btn">{choosetopictexts[lang].button1}</Link>
         <Link to="/topic2/content1" className="dashboard-btn choose-btn">{choosetopictexts[lang].button2}</Link>
         <Link to="/content1_topic3" className="dashboard-btn choose-btn">{choosetopictexts[lang].button3}</Link>
