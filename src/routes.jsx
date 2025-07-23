@@ -50,6 +50,13 @@ import Subtopic3Content1 from './subtopic3/content1'
 import Subtopic3Content2 from './subtopic3/content2'
 import Subtopic3Content3 from './subtopic3/content3'
 
+import Subtopic4Content1 from './subtopic4/content1'
+import Subtopic4Content2 from './subtopic4/content2'
+import Subtopic4Content3 from './subtopic4/content3'
+import Subtopic4Content4 from './subtopic4/content4'
+import Subtopic4Content5 from './subtopic4/content5'
+import Subtopic4Content6 from './subtopic4/content6'
+import Subtopic4Content7 from './subtopic4/content7'
 
 export default function AppRoutes() {
   return (
@@ -105,6 +112,13 @@ export default function AppRoutes() {
       <Route path="/subtopic3/content2" element={<Subtopic3Content2 />}/>
       <Route path="/subtopic3/content3" element={<Subtopic3Content3 />}/>
 
+      <Route path="/subtopic4/content1" element={<Subtopic4Content1 />}/>
+      <Route path="/subtopic4/content2" element={<Subtopic4Content2 />}/>
+      <Route path="/subtopic4/content3" element={<Subtopic4Content3 />}/>
+      <Route path="/subtopic4/content4" element={<Subtopic4Content4 />}/>
+      <Route path="/subtopic4/content5" element={<Subtopic4Content5 />}/>
+      <Route path="/subtopic4/content6" element={<Subtopic4Content6 />}/>
+      <Route path="/subtopic4/content7" element={<Subtopic4Content7 />}/>
     </Routes>
   )
 }

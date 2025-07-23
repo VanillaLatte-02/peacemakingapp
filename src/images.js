@@ -36,6 +36,14 @@ import enSlide39 from './images/en-slide39.png';
 import enSlide40 from './images/en-slide40.png';
 import enSlide41 from './images/en-slide41.png';
 
+import enSlide43 from './images/en-slide43.png';
+import enSlide44 from './images/en-slide44.png';
+import enSlide45 from './images/en-slide45.png';
+import enSlide46 from './images/en-slide46.png';
+import enSlide47 from './images/en-slide47.png';
+import enSlide48 from './images/en-slide48.png';
+import enSlide49 from './images/en-slide49.png';
+
 import enSlide51 from './images/en-slide51.png';
 import enSlide52 from './images/en-slide52.png';
 import enSlide53 from './images/en-slide53.png';
@@ -82,6 +90,14 @@ import idSlide39 from './images/id-slide39.png';
 import idSlide40 from './images/id-slide40.png';
 import idSlide41 from './images/id-slide41.png';
 
+import idSlide43 from './images/id-slide43.png';
+import idSlide44 from './images/id-slide44.png';
+import idSlide45 from './images/id-slide45.png';
+import idSlide46 from './images/id-slide46.png';
+import idSlide47 from './images/id-slide47.png';
+import idSlide48 from './images/id-slide48.png';
+import idSlide49 from './images/id-slide49.png';
+
 import idSlide51 from './images/id-slide51.png';
 import idSlide52 from './images/id-slide52.png';
 import idSlide53 from './images/id-slide53.png';
@@ -125,6 +141,13 @@ export default {
     slide39: idSlide39,
     slide40: idSlide40,
     slide41: idSlide41,
+    slide43: idSlide43,
+    slide44: idSlide44,
+    slide45: idSlide45,
+    slide46: idSlide46,
+    slide47: idSlide47,
+    slide48: idSlide48,
+    slide49: idSlide49,
     slide51: idSlide51,
     slide52: idSlide52,
     slide53: idSlide53,
@@ -167,6 +190,13 @@ export default {
     slide39: enSlide39,
     slide40: enSlide40,
     slide41: enSlide41,
+    slide43: enSlide43,
+    slide44: enSlide44,
+    slide45: enSlide45,
+    slide46: enSlide46,
+    slide47: enSlide47,
+    slide48: enSlide48,
+    slide49: enSlide49,
     slide51: enSlide51,
     slide52: enSlide52,
     slide53: enSlide53,
