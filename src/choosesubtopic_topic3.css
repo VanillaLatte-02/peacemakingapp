@@ -58,7 +58,7 @@ html, body {
   color: var(--text-color); /* Text button color */
   margin: 0;
   padding: 0;
-  font-size: 2rem;
+  font-size: 1.5rem;
   border-radius: 0 !important;
   border: none;
   font-weight: bold;
@@ -78,10 +78,9 @@ html, body {
   background: var(--hover-button-color);
   border: none;
   color: #fff;
-  font-size: 1.5rem;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -104,8 +103,8 @@ html, body {
 
 @media (max-width: 600px) {
   .choose-subtopic-topic3-logo {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
   
   .choose-subtopic-topic3-container {
@@ -124,6 +123,12 @@ html, body {
     max-height: 50vh;
     width: 100vw;
     box-sizing: border-box;
+  }
+
+  .choose-subtopic-topic3-left h2 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    text-align: center;
   }
 
   .choose-subtopic-topic3-bottom.mobile-only {
@@ -148,13 +153,29 @@ html, body {
     width: 100vw;
     margin: 0;
     border-radius: 0 !important;
-    border-bottom: 1px solid var(--border-color);
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
   }
+
+  .arrow-btn-choose-subtopic-topic3 {
+    background: var(--hover-button-color);
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+  
   .choose-subtopic-topic3-btn:last-child {
     border-bottom: none;
   }
@@ -168,8 +189,8 @@ html, body {
 
 @media (min-width:601px) and (max-width: 1024px) {
    .choose-logo {
-    width: 300px;
-    height: 300px;
+    width: 270px;
+    height: 270px;
   }
   
   .choose-subtopic-topic3-container {
@@ -184,6 +205,29 @@ html, body {
     min-height: 0;
     max-height: 50vh;
   }
+
+   .choose-subtopic-topic3-left h2 {
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .arrow-btn-choose-subtopic-topic3 {
+    background: var(--hover-button-color);
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+
   .choose-subtopic-topic3-bottom.mobile-only {
     position: fixed;
     left: 0;
@@ -206,12 +250,13 @@ html, body {
     width: 100vw;
     margin: 0;
     border-radius: 0 !important;
-    border-bottom: 1px solid var(--border-color);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: center;
   }
+
+  
   .choose-subtopic-topic3-btn:last-child {
     border-bottom: none;
   }

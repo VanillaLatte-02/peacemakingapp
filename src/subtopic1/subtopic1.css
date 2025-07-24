@@ -20,7 +20,7 @@
 }
 
 .subtopic1-title {
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -59,6 +59,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.arrow-btn-top-left {
+  border: none;
+  color: var(--content-text-color);
+  border-radius: 50%;
+  font-size: 54px;
+  width: 54px;
+  height: 54px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  background: var(--background-arrow-btn-top-left);
 }
 
 .arrow-btn:hover {

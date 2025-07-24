@@ -23,7 +23,11 @@ export default function Dashboard() {
   return (
     <div className="dashboard-container">
       {/* Baris 1 */}
-      <div className="dashboard-header">
+      <div className="dashboard-header"  style={{
+                backgroundImage: `url(${mainBackground})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center',
+              }}>
         <img
           src={logo}
           alt="Peacemaking App Logo"

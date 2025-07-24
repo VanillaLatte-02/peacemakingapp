@@ -75,10 +75,9 @@ html, body {
   background: var(--hover-button-color);
   border: none;
   color: #fff;
-  font-size: 1.5rem;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
+  width: 70px;
+  height: 70px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -101,8 +100,8 @@ html, body {
 
 @media (max-width: 600px) {
   .choose-logo {
-    width: 120px;
-    height: 120px;
+    width: 150px;
+    height: 150px;
   }
   
   .choose-topic-container {
@@ -121,6 +120,12 @@ html, body {
     max-height: 50vh;
     width: 100vw;
     box-sizing: border-box;
+  }
+
+  .choose-topic-left h2 {
+    color: var(--text-color);
+    font-size: 1.3rem;
+    text-align: center;
   }
 
   .choose-topic-bottom.mobile-only {
@@ -145,13 +150,29 @@ html, body {
     width: 100vw;
     margin: 0;
     border-radius: 0 !important;
-    border-bottom: 1px solid var(--border-color);
-    font-size: 0.8rem;
+    font-size: 1rem;
     display: flex;
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
   }
+
+  .arrow-btn-choose-topic {
+    background: var(--hover-button-color);
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+
   .choose-btn:last-child {
     border-bottom: none;
   }
@@ -181,6 +202,29 @@ html, body {
     min-height: 0;
     max-height: 50vh;
   }
+
+  .choose-topic-left h2 {
+    color: var(--text-color);
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  
+  .arrow-btn-choose-topic {
+    background: var(--hover-button-color);
+    border: none;
+    color: #fff;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 24px;
+    left: 24px;
+  }
+
   .choose-topic-bottom.mobile-only {
     position: fixed;
     left: 0;
@@ -203,8 +247,7 @@ html, body {
     width: 100vw;
     margin: 0;
     border-radius: 0 !important;
-    border-bottom: 1px solid var(--border-color);
-    font-size: 1.2rem;
+    font-size: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;

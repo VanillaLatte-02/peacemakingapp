@@ -20,10 +20,7 @@ export default function Topic2Content9() {
     <div className="topic2-container">
       <div className="topic2-header">
         <div className="topic2-title-group">
-          <Link to="/choosetopic" className="arrow-btn" style={{
-              border: '1px solid #fff',
-              background: 'rgba(255,255,255,0.3)'
-            }}>
+          <Link to="/choosetopic" className="arrow-btn-top-left">
             <MdChevronLeft />
           </Link>
           <div className="topic2-title">{topic2texts[lang].titlecontent}</div>

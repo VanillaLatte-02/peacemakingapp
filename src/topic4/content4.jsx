@@ -20,10 +20,7 @@ export default function Topic4Content4() {
     <div className="topic4-container">
       <div className="topic4-header">
         <div className="topic4-title-group">
-          <Link to="/choosetopic" className="arrow-btn" style={{
-              border: '1px solid #fff',
-              background: 'rgba(255,255,255,0.3)'
-            }}>
+          <Link to="/choosetopic" className="arrow-btn-top-left">
             <MdChevronLeft />
           </Link>
           <div className="topic4-title">{topic4texts[lang].titlecontent}</div>

@@ -20,10 +20,7 @@ export default function Subtopic1Content2() {
     <div className="subtopic1-container">
       <div className="subtopic1-header">
         <div className="subtopic1-title-group">
-          <Link to="/choosetopic" className="arrow-btn" style={{
-              border: '1px solid #fff',
-              background: 'rgba(255,255,255,0.3)'
-            }}>
+          <Link to="/choosetopic" className="arrow-btn-top-left">
             <MdChevronLeft />
           </Link>
           <div className="subtopic1-title">{subtopic1texts[lang].titlecontent}</div>
