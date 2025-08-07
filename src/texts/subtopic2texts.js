@@ -4,6 +4,27 @@ const subtopic2texts = {
   },
   en: {
     titlecontent: "RECONCILE RELATIONSHIPS",
+  },
+  zh: {
+    titlecontent: "调解关系",
+  },
+  sw: {
+    titlecontent: "KUREJESHA UHUSIANO",
+  },
+  es: {
+    titlecontent: "RECONCILIAR RELACIONES",
+  },
+  pt: {
+    titlecontent: "RECONCILIAR RELACIONAMENTOS",
+  },
+  ru: {
+    titlecontent: "ПОМИРЕНИЕ ОТНОШЕНИЙ",
+  },
+  ar: {
+    titlecontent: "إِصْلاحُ العَلاقات",
+  },
+  fr: {
+    titlecontent: "RÉCONCILIER LES RELATIONS",
   }
 }
 

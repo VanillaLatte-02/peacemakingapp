@@ -4,6 +4,27 @@ const topic4texts = {
   },
   en: {
     titlecontent: "STEPS TO MAKING PEACE",
+  },
+  zh: {
+    titlecontent: "和平的步骤",
+  },
+  sw: {
+    titlecontent: "HATUA ZA KUFANYA AMANI",
+  },
+  es: {
+    titlecontent: "PASOS PARA HACER LAS PACES",
+  },
+  pt: {
+    titlecontent: "PASSOS PARA FAZER A PAZ",
+  },
+  ru: {
+    titlecontent: "ШАГИ К МИРУ",
+  },
+  ar: {
+    titlecontent: "خطوات صنع السلام",
+  },
+  fr: {
+    titlecontent: "ÉTAPES POUR FAIRE LA PAIX",
   }
 }
 

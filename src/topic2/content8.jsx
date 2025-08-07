@@ -1,4 +1,3 @@
-
 import { MdChevronLeft, MdChevronRight, MdKeyboardDoubleArrowLeft, MdKeyboardDoubleArrowRight } from 'react-icons/md'
 import { Link, useNavigate } from 'react-router-dom'
 import { useSwipeable } from 'react-swipeable'
@@ -48,6 +47,20 @@ export default function Topic2Content8() {
           className="topic2-img"
           draggable={false}
         />
+        {/* <Link
+          to="/topic2/content9"
+          className="custom-hitbox"
+          style={{
+            position: 'absolute',
+            top: 170,
+            right: 500,
+            width: '200px', 
+            height: '110px',
+            zIndex: 20,
+            background: 'rgba(16, 52, 255, 0.4)', // transparan, bisa dihilangkan
+            cursor: 'pointer'
+          }}
+        /> */}
         </div>
         {/* Page Indicator di bawah gambar */}
         {(() => {

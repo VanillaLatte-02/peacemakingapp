@@ -70,7 +70,7 @@ html, body {
   justify-content: center;
   flex: 1;
 }
-.choose-subtopic-topic3-btn:hover {
+.choose-subtopic-topic3-btn-:hover {
   background: var(--hover-button-color);
 }
 
