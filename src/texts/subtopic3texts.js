@@ -12,7 +12,7 @@ const subtopic3texts = {
     titlecontent: "KUANDAA KUFANYA AMANI",
   },
   es: {
-    titlecontent: "PREPARARSE PARA HACER LAS PAZ",
+    titlecontent: "PREPARÁNDOSE PARA HACER LA PAZ",
   },
   pt: {
     titlecontent: "PREPARANDO-SE PARA FAZER A PAZ",

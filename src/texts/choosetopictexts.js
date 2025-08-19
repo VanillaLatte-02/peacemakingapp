@@ -30,8 +30,8 @@ const choosetopictexts = {
   es: {
     title: "TEMAS DE PACIFICACIÓN PERSONAL",
     button1: "EL CONFLICTO COMO OPORTUNIDAD",
-    button2: "RESPUESTAS AL CONFLICTO",
-    button3: "PASOS PARA HACER LAS PACES",
+    button2: "ESPUESTAS AL CONFLICTO",
+    button3: "PASOS PARA HACER LA PAZ",
     button4: "CONSIDERACIONES CULTURALES"
   },
   pt: {

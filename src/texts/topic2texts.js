@@ -12,7 +12,7 @@ const topic2texts = {
     titlecontent: "MIGOGORO KAMA FURSA",
   },
   es: {
-    titlecontent: "EL CONFLICTO COMO OPORTUNIDAD",
+    titlecontent: "ESPUESTAS AL CONFLICTO",
   },
   pt: {
     titlecontent: "CONFLITO COMO OPORTUNIDADE",

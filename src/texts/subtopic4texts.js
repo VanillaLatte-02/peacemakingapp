@@ -12,7 +12,7 @@ const subtopic4texts = {
     titlecontent: "KUTATUA TOFAUTI",
   },
   es: {
-    titlecontent: "RESOLVER DIFERENCIAS",
+    titlecontent: "RESOLVER LAS DIFERENCIAS",
   },
   pt: {
     titlecontent: "RESOLVER DIFERENÇAS",

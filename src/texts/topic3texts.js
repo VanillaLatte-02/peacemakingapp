@@ -12,7 +12,7 @@ const topic4texts = {
     titlecontent: "HATUA ZA KUFANYA AMANI",
   },
   es: {
-    titlecontent: "PASOS PARA HACER LAS PACES",
+    titlecontent: "PASOS PARA HACER LA PAZ",
   },
   pt: {
     titlecontent: "PASSOS PARA FAZER A PAZ",

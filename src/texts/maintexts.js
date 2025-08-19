@@ -16,7 +16,7 @@ const maintexts = {
     mainbutton: "BINAFSI"
   },
   es: {
-    appname: "APLICACIÓN DE RECONCILIACIÓN",
+    appname: "PACIFICADORES",
     mainbutton: "PERSONAL"
   },
   pt: {

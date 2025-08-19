@@ -12,7 +12,7 @@ const subtopic2texts = {
     titlecontent: "KUREJESHA UHUSIANO",
   },
   es: {
-    titlecontent: "RECONCILIAR RELACIONES",
+    titlecontent: "RECONCILIAR LA RELACIÓN",
   },
   pt: {
     titlecontent: "RECONCILIAR RELACIONAMENTOS",
