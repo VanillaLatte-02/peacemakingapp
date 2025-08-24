@@ -1,30 +1,30 @@
 const topic2texts = {
   id: {
-    titlecontent: "KONFLIK SEBAGAI PELUANG",
+    titlecontent: "RESPON TERHADAP KONFLIK",
   },
   en: {
-    titlecontent: "CONFLICT AS OPPORTUNITY",
+    titlecontent: "RESPONSES TO CONFLICT",
   },
   zh: {
-    titlecontent: "冲突作为机会",
+    titlecontent: "应对冲突",
   },
   sw: {
-    titlecontent: "MIGOGORO KAMA FURSA",
+    titlecontent: "MAJIBU KWA MIGOGORO",
   },
   es: {
-    titlecontent: "ESPUESTAS AL CONFLICTO",
+    titlecontent: "RESPUESTAS AL CONFLICTO",
   },
   pt: {
-    titlecontent: "CONFLITO COMO OPORTUNIDADE",
+    titlecontent: "RESPOSTAS AO CONFLITO",
   },
   ru: {
-    titlecontent: "КОНФЛИКТ КАК ВОЗМОЖНОСТЬ",
+    titlecontent: "РЕАКЦИИ НА КОНФЛИКТ",
   },
   ar: {
-    titlecontent: "الصراع كفرصة",
+    titlecontent: "الاستجابات للصراع",
   },
   fr: {
-    titlecontent: "CONFLIT COMME OPPORTUNITÉ",
+    titlecontent: "RÉPONSES AU CONFLIT",
   }
 }
 

@@ -1,14 +1,14 @@
 const maintexts = {
   id: {
-    appname: "APLIKASI PEACEMAKING",
+    appname: "JALAN PEACEMAKING",
     mainbutton: "PRIBADI"
   },
   en: {
-    appname: "PEACEMAKING APP",
+    appname: "PEACEMAKING PATH",
     mainbutton: "PERSONAL"
   },
   zh: {
-    appname: "和平应用程序 (PEACEMAKING APP)",
+    appname: "和平应用程序",
     mainbutton: "个人"
   },
   sw: {

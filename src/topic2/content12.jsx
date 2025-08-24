@@ -13,7 +13,7 @@ export default function Topic2Content12() {
   const navigate = useNavigate();
   const handlers = useSwipeable({
     onSwipedLeft: () => navigate('/topic2/content12'),
-    onSwipedRight: () => {},
+    onSwipedRight: () => { },
     trackMouse: true
   });
   return (
@@ -31,52 +31,54 @@ export default function Topic2Content12() {
             <MdKeyboardDoubleArrowLeft />
           </Link>
           <Link to="/topic2/content11" className="arrow-btn" >
-            <MdChevronLeft  />
+            <MdChevronLeft />
           </Link>
-          <Link to="" className="arrow-btn" >
+          <Link to="/choosetopic" className="arrow-btn" >
             <MdChevronRight />
           </Link>
-          <Link to="" className="arrow-btn-startend" >
+          <Link to="/choosetopic" className="arrow-btn-startend" >
             <MdKeyboardDoubleArrowRight />
           </Link>
         </div>
       </div>
       <div className="topic2-body" {...handlers}>
-        <img
-          src={images[lang].slide18}
-          alt="Slide18 Image"
-          className="topic2-img"
-          draggable={false}
-        />
+        <div className="scroll-img-container">
+          <img
+            src={images[lang].slide18}
+            alt="Slide18 Image"
+            className="topic2-img"
+            draggable={false}
+          />
         </div>
-        {/* Page Indicator di bawah gambar */}
-        {(() => {
-          const activePage = 12;
-          return (
-            <div className="page-indicator">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
-                <span
-                  key={num}
-                  className={`dot${num === activePage ? ' active' : ''}`}
-                />
-              ))}
-            </div>
-          );
-        })()}
+      </div>
+      {/* Page Indicator di bawah gambar */}
+      {(() => {
+        const activePage = 12;
+        return (
+          <div className="page-indicator">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
+              <span
+                key={num}
+                className={`dot${num === activePage ? ' active' : ''}`}
+              />
+            ))}
+          </div>
+        );
+      })()}
 
-       {/* Navigation Arrows for mobile interfacew */}
+      {/* Navigation Arrows for mobile interfacew */}
       <div className="topic2-arrows-bottom mobile-only">
         <Link to="/topic2/content1" className="arrow-btn-startend" >
-            <MdKeyboardDoubleArrowLeft />
-          </Link>
+          <MdKeyboardDoubleArrowLeft />
+        </Link>
         <Link to="/topic2/content11" className="arrow-btn">
           <MdChevronLeft />
         </Link>
-        <Link to="" className="arrow-btn" >
-          <MdChevronRight  />
+        <Link to="/choosetopic" className="arrow-btn" >
+          <MdChevronRight />
         </Link>
-        <Link to="" className="arrow-btn-startend" >
-          <MdKeyboardDoubleArrowRight  />
+        <Link to="/choosetopic" className="arrow-btn-startend" >
+          <MdKeyboardDoubleArrowRight />
         </Link>
       </div>
     </div>

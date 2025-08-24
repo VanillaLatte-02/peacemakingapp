@@ -13,7 +13,7 @@ export default function Subtopic2Content1() {
   const navigate = useNavigate();
   const handlers = useSwipeable({
     onSwipedLeft: () => navigate('/subtopic2/content2'),
-    onSwipedRight: () => {},
+    onSwipedRight: () => { },
     trackMouse: true
   });
   return (
@@ -27,11 +27,11 @@ export default function Subtopic2Content1() {
         </div>
         {/* Arrows di header, hanya tampil di desktop */}
         <div className="subtopic2-arrows desktop-only">
-          <Link to="" className="arrow-btn-startend" >
+          <Link to="/choosesubtopic_topic3" className="arrow-btn-startend" >
             <MdKeyboardDoubleArrowLeft />
           </Link>
-          <Link to="" className="arrow-btn" >
-            <MdChevronLeft  />
+          <Link to="/choosesubtopic_topic3" className="arrow-btn" >
+            <MdChevronLeft />
           </Link>
           <Link to="/subtopic2/content2" className="arrow-btn" >
             <MdChevronRight />
@@ -41,42 +41,44 @@ export default function Subtopic2Content1() {
           </Link>
         </div>
       </div>
-      <div className="subtopic2-body" {...handlers}>
-        <img
-          src={images[lang].slide33}
-          alt="Slide33 Image"
-          className="subtopic2-img"
-          draggable={false}
-        />
+      <div className="subtopic2-body" {...handlers}>\
+        <div className="scroll-img-container">
+          <img
+            src={images[lang].slide33}
+            alt="Slide33 Image"
+            className="subtopic2-img"
+            draggable={false}
+          />
         </div>
-        {/* Page Indicator di bawah gambar */}
-        {(() => {
-          const activePage = 1;
-          return (
-            <div className="page-indicator">
-              {[1, 2, 3, 4, 5].map((num) => (
-                <span
-                  key={num}
-                  className={`dot${num === activePage ? ' active' : ''}`}
-                />
-              ))}
-            </div>
-          );
-        })()}
+      </div>
+      {/* Page Indicator di bawah gambar */}
+      {(() => {
+        const activePage = 1;
+        return (
+          <div className="page-indicator">
+            {[1, 2, 3, 4, 5].map((num) => (
+              <span
+                key={num}
+                className={`dot${num === activePage ? ' active' : ''}`}
+              />
+            ))}
+          </div>
+        );
+      })()}
 
-       {/* Navigation Arrows for mobile interfacew */}
+      {/* Navigation Arrows for mobile interfacew */}
       <div className="subtopic2-arrows-bottom mobile-only">
-        <Link to="" className="arrow-btn-startend" >
-            <MdKeyboardDoubleArrowLeft />
-          </Link>
-        <Link to="" className="arrow-btn">
+        <Link to="/choosesubtopic_topic3" className="arrow-btn-startend" >
+          <MdKeyboardDoubleArrowLeft />
+        </Link>
+        <Link to="/choosesubtopic_topic3" className="arrow-btn">
           <MdChevronLeft />
         </Link>
         <Link to="/subtopic2/content2" className="arrow-btn" >
-          <MdChevronRight  />
+          <MdChevronRight />
         </Link>
         <Link to="/subtopic2/content5" className="arrow-btn-startend" >
-          <MdKeyboardDoubleArrowRight  />
+          <MdKeyboardDoubleArrowRight />
         </Link>
       </div>
     </div>

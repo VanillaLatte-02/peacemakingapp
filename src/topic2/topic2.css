@@ -96,8 +96,15 @@
   width: 100%;
   height: 100%;
   aspect-ratio: 16 / 9;
-  object-fit: fill;
+    /* object-fit: cover; */
+  /* object-fit: fill; */
   display: block;
+}
+
+.scroll-img-container {
+  width: 100%;
+  height: 100%;
+  overflow: auto;
 }
 
 .topic2-title-group {

@@ -31,7 +31,7 @@ export default function Subtopic2Content4() {
             <MdKeyboardDoubleArrowLeft />
           </Link>
           <Link to="/subtopic2/content3" className="arrow-btn" >
-            <MdChevronLeft  />
+            <MdChevronLeft />
           </Link>
           <Link to="/subtopic2/content5" className="arrow-btn" >
             <MdChevronRight />
@@ -42,41 +42,43 @@ export default function Subtopic2Content4() {
         </div>
       </div>
       <div className="subtopic2-body" {...handlers}>
-        <img
-          src={images[lang].slide36}
-          alt="Slide36 Image"
-          className="subtopic2-img"
-          draggable={false}
-        />
+        <div className="scroll-img-container">
+          <img
+            src={images[lang].slide36}
+            alt="Slide36 Image"
+            className="subtopic2-img"
+            draggable={false}
+          />
         </div>
-        {/* Page Indicator di bawah gambar */}
-        {(() => {
-          const activePage = 4;
-          return (
-            <div className="page-indicator">
-              {[1, 2, 3, 4, 5].map((num) => (
-                <span
-                  key={num}
-                  className={`dot${num === activePage ? ' active' : ''}`}
-                />
-              ))}
-            </div>
-          );
-        })()}
+      </div>
+      {/* Page Indicator di bawah gambar */}
+      {(() => {
+        const activePage = 4;
+        return (
+          <div className="page-indicator">
+            {[1, 2, 3, 4, 5].map((num) => (
+              <span
+                key={num}
+                className={`dot${num === activePage ? ' active' : ''}`}
+              />
+            ))}
+          </div>
+        );
+      })()}
 
-       {/* Navigation Arrows for mobile interfacew */}
+      {/* Navigation Arrows for mobile interfacew */}
       <div className="subtopic2-arrows-bottom mobile-only">
         <Link to="/subtopic2/content1" className="arrow-btn-startend" >
-            <MdKeyboardDoubleArrowLeft />
-          </Link>
+          <MdKeyboardDoubleArrowLeft />
+        </Link>
         <Link to="/subtopic2/content3" className="arrow-btn">
           <MdChevronLeft />
         </Link>
         <Link to="/subtopic2/content5" className="arrow-btn" >
-          <MdChevronRight  />
+          <MdChevronRight />
         </Link>
         <Link to="/subtopic2/content5" className="arrow-btn-startend" >
-          <MdKeyboardDoubleArrowRight  />
+          <MdKeyboardDoubleArrowRight />
         </Link>
       </div>
     </div>

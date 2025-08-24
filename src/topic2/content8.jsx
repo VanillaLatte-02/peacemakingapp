@@ -30,7 +30,7 @@ export default function Topic2Content8() {
             <MdKeyboardDoubleArrowLeft />
           </Link>
           <Link to="/topic2/content7" className="arrow-btn" >
-            <MdChevronLeft  />
+            <MdChevronLeft />
           </Link>
           <Link to="/topic2/content9" className="arrow-btn" >
             <MdChevronRight />
@@ -41,13 +41,14 @@ export default function Topic2Content8() {
         </div>
       </div>
       <div className="topic2-body" {...handlers}>
-        <img
-          src={images[lang].slide14}
-          alt="Slide14 Image"
-          className="topic2-img"
-          draggable={false}
-        />
-        {/* <Link
+        <div className="scroll-img-container">
+          <img
+            src={images[lang].slide14}
+            alt="Slide14 Image"
+            className="topic2-img"
+            draggable={false}
+          />
+          {/* <Link
           to="/topic2/content9"
           className="custom-hitbox"
           style={{
@@ -62,34 +63,35 @@ export default function Topic2Content8() {
           }}
         /> */}
         </div>
-        {/* Page Indicator di bawah gambar */}
-        {(() => {
-          const activePage = 8;
-          return (
-            <div className="page-indicator">
-              {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
-                <span
-                  key={num}
-                  className={`dot${num === activePage ? ' active' : ''}`}
-                />
-              ))}
-            </div>
-          );
-        })()}
+      </div>
+      {/* Page Indicator di bawah gambar */}
+      {(() => {
+        const activePage = 8;
+        return (
+          <div className="page-indicator">
+            {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12].map((num) => (
+              <span
+                key={num}
+                className={`dot${num === activePage ? ' active' : ''}`}
+              />
+            ))}
+          </div>
+        );
+      })()}
 
-       {/* Navigation Arrows for mobile interfacew */}
+      {/* Navigation Arrows for mobile interfacew */}
       <div className="topic2-arrows-bottom mobile-only">
         <Link to="/topic2/content1" className="arrow-btn-startend" >
-            <MdKeyboardDoubleArrowLeft />
-          </Link>
+          <MdKeyboardDoubleArrowLeft />
+        </Link>
         <Link to="/topic2/content7" className="arrow-btn">
           <MdChevronLeft />
         </Link>
         <Link to="/topic2/content9" className="arrow-btn" >
-          <MdChevronRight  />
+          <MdChevronRight />
         </Link>
         <Link to="/topic2/content12" className="arrow-btn-startend" >
-          <MdKeyboardDoubleArrowRight  />
+          <MdKeyboardDoubleArrowRight />
         </Link>
       </div>
     </div>

@@ -219,59 +219,59 @@ import swSlide56 from './images/missing.png';
 import swSlide57 from './images/missing.png'; 
 
 // Espanol
-import esSlide4 from './images/missing.png';
-import esSlide5 from './images/missing.png';
-import esSlide7 from './images/missing.png';
-import esSlide8 from './images/missing.png';
-import esSlide9 from './images/missing.png';
-import esSlide10 from './images/missing.png';
-import esSlide11 from './images/missing.png';
-import esSlide12 from './images/missing.png';
-import esSlide13 from './images/missing.png';
-import esSlide14 from './images/missing.png';
-import esSlide15 from './images/missing.png';
-import esSlide16 from './images/missing.png';
-import esSlide17 from './images/missing.png';
-import esSlide18 from './images/missing.png';
+import esSlide4 from './images/es-slide4.png';
+import esSlide5 from './images/es-slide5.png';
+import esSlide7 from './images/es-slide7.png';
+import esSlide8 from './images/es-slide8.png';
+import esSlide9 from './images/es-slide9.png';
+import esSlide10 from './images/es-slide10.png';
+import esSlide11 from './images/es-slide11.png';
+import esSlide12 from './images/es-slide12.png';
+import esSlide13 from './images/es-slide13.png';
+import esSlide14 from './images/es-slide14.png';
+import esSlide15 from './images/es-slide15.png';
+import esSlide16 from './images/es-slide16.png';
+import esSlide17 from './images/es-slide17.png';
+import esSlide18 from './images/es-slide18.png';
 
-import esSlide20 from './images/missing.png';
+import esSlide20 from './images/es-slide20.png';
 
-import esSlide22 from './images/missing.png';
-import esSlide23 from './images/missing.png';
-import esSlide24 from './images/missing.png';
-import esSlide25 from './images/missing.png';
-import esSlide26 from './images/missing.png';
-import esSlide27 from './images/missing.png';
-import esSlide28 from './images/missing.png';
-import esSlide29 from './images/missing.png';
-import esSlide30 from './images/missing.png';
-import esSlide31 from './images/missing.png';
+import esSlide22 from './images/es-slide22.png';
+import esSlide23 from './images/es-slide23.png';
+import esSlide24 from './images/es-slide24.png';
+import esSlide25 from './images/es-slide25.png';
+import esSlide26 from './images/es-slide26.png';
+import esSlide27 from './images/es-slide27.png';
+import esSlide28 from './images/es-slide28.png';
+import esSlide29 from './images/es-slide29.png';
+import esSlide30 from './images/es-slide30.png';
+import esSlide31 from './images/es-slide31.png';
 
-import esSlide33 from './images/missing.png';
-import esSlide34 from './images/missing.png';
-import esSlide35 from './images/missing.png';
-import esSlide36 from './images/missing.png';
-import esSlide37 from './images/missing.png';
+import esSlide33 from './images/es-slide33.png';
+import esSlide34 from './images/es-slide34.png';
+import esSlide35 from './images/es-slide35.png';
+import esSlide36 from './images/es-slide36.png';
+import esSlide37 from './images/es-slide37.png';
 
-import esSlide39 from './images/missing.png';
-import esSlide40 from './images/missing.png';
-import esSlide41 from './images/missing.png';
+import esSlide39 from './images/es-slide39.png';
+import esSlide40 from './images/es-slide40.png';
+import esSlide41 from './images/es-slide41.png';
 
-import esSlide43 from './images/missing.png';
-import esSlide44 from './images/missing.png';
-import esSlide45 from './images/missing.png';
-import esSlide46 from './images/missing.png';
-import esSlide47 from './images/missing.png';
-import esSlide48 from './images/missing.png';
-import esSlide49 from './images/missing.png';
+import esSlide43 from './images/es-slide43.png';
+import esSlide44 from './images/es-slide44.png';
+import esSlide45 from './images/es-slide45.png';
+import esSlide46 from './images/es-slide46.png';
+import esSlide47 from './images/es-slide47.png';
+import esSlide48 from './images/es-slide48.png';
+import esSlide49 from './images/es-slide49.png';
 
-import esSlide51 from './images/missing.png';
-import esSlide52 from './images/missing.png';
-import esSlide53 from './images/missing.png';
-import esSlide54 from './images/missing.png';
-import esSlide55 from './images/missing.png';
-import esSlide56 from './images/missing.png';
-import esSlide57 from './images/missing.png'; 
+import esSlide51 from './images/es-slide51.png';
+import esSlide52 from './images/es-slide52.png';
+import esSlide53 from './images/es-slide53.png';
+import esSlide54 from './images/es-slide54.png';
+import esSlide55 from './images/es-slide55.png';
+import esSlide56 from './images/es-slide56.png';
+import esSlide57 from './images/es-slide57.png';
 
 // Portuguese
 import ptSlide4 from './images/missing.png';
