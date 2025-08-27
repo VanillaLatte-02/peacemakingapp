@@ -12,7 +12,11 @@
   justify-content: center;
   text-align: center;
 }
-html, body, #root, .dashboard-container{
+
+html,
+body,
+#root,
+.dashboard-container {
   width: 100%;
   height: 100%;
   margin: 0;
@@ -22,21 +26,22 @@ html, body, #root, .dashboard-container{
   overflow: hidden;
   touch-action: none;
   overscroll-behavior: none;
+  display: flex;
+  flex-direction: column;
+  padding-top: max(env(safe-area-inset-top, 16px));
+  padding-bottom: max(env(safe-area-inset-bottom, 16px));
+  padding-left: max(env(safe-area-inset-left, 0px));
+  padding-right: max(env(safe-area-inset-right, 0px));
 }
 
 .dashboard-logo {
-    width: 400px;
-    height: 400px;
-    object-fit: cover;
-  }
-.dashboard-container {
-  display: flex;
-  flex-direction: column;
-  margin: 0;
-  padding: 0;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
 }
+
 .dashboard-header {
-  flex: 0 0 75%; 
+  flex: 0 0 75%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -45,11 +50,13 @@ html, body, #root, .dashboard-container{
   height: 100%;
   overflow: hidden;
 }
+
 .dashboard-header h2 {
   color: var(--text2-color);
   font-size: 3rem;
   text-align: center;
 }
+
 .dashboard-actions {
   flex: 0 0 25%;
   display: flex;
@@ -61,9 +68,12 @@ html, body, #root, .dashboard-container{
   overflow: hidden;
   border-top: 6px solid var(--border-color);
 }
+
 .dashboard-btn {
-  background: var(--secondary-color); /* button color */
-  color: var(--text-color); /* Text button color */
+  background: var(--secondary-color);
+  /* button color */
+  color: var(--text-color);
+  /* Text button color */
   border: none;
   border-radius: 0 !important;
   font-size: 2rem;
@@ -72,6 +82,7 @@ html, body, #root, .dashboard-container{
   min-width: 120px;
   transition: background 0.2s;
 }
+
 .dashboard-btn:hover {
   background: var(--hover-button-color);
 }
@@ -90,7 +101,9 @@ html, body, #root, .dashboard-container{
   height: 60px;
   color: var(--text-color);
 }
-@media (max-width: 600px) {
+
+@media (max-width: 600px) and (orientation: portrait)  {
+
   .dashboard-header,
   .dashboard-actions {
     background-size: auto;
@@ -99,9 +112,11 @@ html, body, #root, .dashboard-container{
     flex-shrink: 1;
     overflow: hidden;
   }
+
   .dashboard-header h2 {
     font-size: 1.5rem;
   }
+
   .dashboard-btn-full {
     width: 100%;
     height: 100%;
@@ -115,6 +130,52 @@ html, body, #root, .dashboard-container{
     justify-content: center;
     text-align: center;
   }
+
+  .dashboard-language-dropdown {
+    top: 32px;
+    right: 32px;
+    width: 180px;
+    height: 50px;
+    font-size: 0.7rem;
+    padding: 2px 2px;
+    border-width: 2px;
+  }
+
+  .dashboard-logo {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 900px) and (orientation: landscape)  {
+
+  .dashboard-header,
+  .dashboard-actions {
+    background-size: auto;
+    min-height: 0;
+    height: 100%;
+    flex-shrink: 1;
+    overflow: hidden;
+  }
+
+  .dashboard-header h2 {
+    font-size: 2rem;
+  }
+
+  .dashboard-btn-full {
+    width: 100%;
+    height: 100%;
+    min-width: unset;
+    padding: 0;
+    font-size: 2rem;
+    border-radius: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   .dashboard-language-dropdown {
     top: 32px;
     right: 32px;
@@ -124,14 +185,15 @@ html, body, #root, .dashboard-container{
     padding: 2px 2px;
     border-width: 2px;
   }
-  
+
   .dashboard-logo {
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
   }
 }
 
-@media (min-width: 601px) and (max-width: 1024px) {
+@media (min-width: 601px) and (max-width: 1024px) and (orientation: portrait) {
+
   .dashboard-header,
   .dashboard-actions {
     background-size: auto;
@@ -140,9 +202,56 @@ html, body, #root, .dashboard-container{
     flex-shrink: 1;
     overflow: hidden;
   }
+
   .dashboard-header h2 {
     font-size: 3rem;
   }
+
+  .dashboard-btn-full {
+    width: 100%;
+    height: 100%;
+    min-width: unset;
+    padding: 0;
+    font-size: 3rem;
+    border-radius: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .dashboard-language-dropdown {
+    top: 32px;
+    right: 32px;
+    width: 300px;
+    height: 80px;
+    font-size: 1.5rem;
+    border-width: 2px;
+  }
+
+  .dashboard-logo {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+/* Galaxy S20 Ultra horizontal */
+@media (min-width: 901px) and (max-width: 1024px) and (orientation: landscape) {
+
+  .dashboard-header,
+  .dashboard-actions {
+    background-size: auto;
+    min-height: 0;
+    height: 100%;
+    flex-shrink: 1;
+    overflow: hidden;
+  }
+
+  .dashboard-header h2 {
+    font-size: 2rem;
+  }
+
   .dashboard-btn-full {
     width: 100%;
     height: 100%;
@@ -156,15 +265,60 @@ html, body, #root, .dashboard-container{
     justify-content: center;
     text-align: center;
   }
+
   .dashboard-language-dropdown {
     top: 32px;
     right: 32px;
-    width: 250px;
+    width: 300px;
     height: 80px;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     border-width: 2px;
   }
-  
+
+  .dashboard-logo {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1366px) and (orientation: landscape) {
+
+  .dashboard-header,
+  .dashboard-actions {
+    background-size: auto;
+    min-height: 0;
+    height: 100%;
+    flex-shrink: 1;
+    overflow: hidden;
+  }
+
+  .dashboard-header h2 {
+    font-size: 3rem;
+  }
+
+  .dashboard-btn-full {
+    width: 100%;
+    height: 100%;
+    min-width: unset;
+    padding: 0;
+    font-size: 2rem;
+    border-radius: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .dashboard-language-dropdown {
+    top: 32px;
+    right: 32px;
+    width: 300px;
+    height: 80px;
+    font-size: 1.5rem;
+    border-width: 2px;
+  }
+
   .dashboard-logo {
     width: 300px;
     height: 300px;

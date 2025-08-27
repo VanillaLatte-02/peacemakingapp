@@ -5,6 +5,10 @@
   flex-direction: column;
   box-sizing: border-box;
   overflow: hidden;
+  padding-top: max(env(safe-area-inset-top, 16px));
+  padding-bottom: max(env(safe-area-inset-bottom, 16px));
+  padding-left: max(env(safe-area-inset-left, 0px));
+  padding-right: max(env(safe-area-inset-right, 0px));
 }
 
 .topic1-header {

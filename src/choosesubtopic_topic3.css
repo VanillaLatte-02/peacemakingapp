@@ -101,7 +101,7 @@ html, body {
     display: none;
   }
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (orientation: portrait) {
   .choose-subtopic-topic3-logo {
     width: 150px;
     height: 150px;
@@ -256,8 +256,169 @@ html, body {
     justify-content: center;
   }
 
-  
   .choose-subtopic-topic3-btn:last-child {
     border-bottom: none;
+  }
+}
+
+/* Phone Landscape */
+@media (max-width: 932px) and (orientation: landscape) {
+  .choose-subtopic-topic3-container {
+    flex-direction: row !important;
+  }
+
+  .choose-subtopic-topic3-left {
+    flex: 0 0 50% !important;
+    height: 100% !important;
+    max-height: none !important;
+    width: 50% !important;
+  }
+
+  .choose-subtopic-topic3-left h2 {
+    color: var(--text-color);
+    font-size: 1.4rem;
+    text-align: center;
+  }
+
+  .choose-subtopic-topic3-logo {
+    width: 220px !important;
+    height: 220px !important;
+    object-fit: cover !important;
+  }
+
+  .choose-subtopic-topic3-right,
+  .choose-subtopic-topic3-bottom.mobile-only {
+    flex: 0 0 50% !important;
+    position: relative !important;
+    height: 100% !important;
+    max-height: none !important;
+    width: 60% !important;
+    border-top: none !important;
+    border-left: 6px solid var(--border-color) !important;
+  }
+
+  .choose-subtopic-topic3-btn {
+    width: 100% !important;
+    height: 100% !important;
+    background: var(--button-color) !important;
+    color: var(--text-color) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1rem !important;
+    border-radius: 0 !important;
+    border: none !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    transition: background 0.2s !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 1 !important;
+  }
+
+  .arrow-btn-choose-subtopic-topic3 {
+    background: var(--hover-button-color) !important;
+    border: none !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    width: 50px !important;
+    height: 50px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: 24px !important;
+    left: 24px !important;
+  }
+
+  .mobile-only {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: flex !important;
+  }
+}
+
+/* Tablet Landscape */
+@media (min-width: 933px) and (max-width: 1024px) and (orientation: landscape) {
+  .choose-subtopic-topic3-container {
+    flex-direction: row !important;
+  }
+
+  .choose-subtopic-topic3-left {
+    flex: 0 0 50% !important;
+    height: 100% !important;
+    max-height: none !important;
+    width: 50% !important;
+  }
+
+  .choose-subtopic-topic3-left h2 {
+    color: var(--text-color);
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .choose-subtopic-topic3-logo {
+    width: 300px !important;
+    height: 300px !important;
+    object-fit: cover !important;
+  }
+
+  .choose-subtopic-topic3-right,
+  .choose-subtopic-topic3-bottom.mobile-only {
+    flex: 0 0 50% !important;
+    position: relative !important;
+    height: 100% !important;
+    max-height: none !important;
+    width: 60% !important;
+    border-top: none !important;
+    border-left: 6px solid var(--border-color) !important;
+  }
+
+  .choose-subtopic-topic3-btn {
+    width: 100% !important;
+    height: 100% !important;
+    background: var(--button-color) !important;
+    color: var(--text-color) !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    font-size: 1.8rem !important;
+    border-radius: 0 !important;
+    border: none !important;
+    font-weight: bold !important;
+    cursor: pointer !important;
+    transition: background 0.2s !important;
+    text-align: center !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex: 1 !important;
+  }
+
+  .arrow-btn-choose-subtopic-topic3 {
+    background: var(--hover-button-color) !important;
+    border: none !important;
+    color: #fff !important;
+    border-radius: 50% !important;
+    width: 70px !important;
+    height: 70px !important;
+    cursor: pointer !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    position: absolute !important;
+    top: 24px !important;
+    left: 24px !important;
+  }
+
+  .mobile-only {
+    display: none !important;
+  }
+
+  .desktop-only {
+    display: flex !important;
   }
 }
