@@ -20,7 +20,7 @@ export default function Topic1Content1() {
     <div className="topic1-container">
       <div className="topic1-header">
         <div className="topic1-title-group">
-          <Link to="/choosetopic" className="arrow-btn-top-left">
+          <Link to="/choosetopic" className="topic1-arrow-btn-top-left">
             <MdChevronLeft />
           </Link>
           <div className="topic1-title">{topic1texts[lang].titlecontent}</div>

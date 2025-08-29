@@ -1,10 +1,25 @@
-.topic4-container {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
   min-height: 100vh;
-  height: 100svh;
+  min-height: 100dvh;
+  min-height: 100svh;
+  overflow: hidden;
+}
+
+.topic4-container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
   overflow: hidden;
+  padding-top: max(env(safe-area-inset-top, 16px));
+  padding-bottom: max(env(safe-area-inset-bottom, 16px));
+  padding-left: max(env(safe-area-inset-left, 16px));
+  padding-right: max(env(safe-area-inset-right, 16px));
 }
 
 .topic4-header {
@@ -213,11 +228,11 @@
 @media (min-width: 601px) and (max-width: 1024px) {
   .topic4-header {
     padding: 8px 8px;
-    min-height: 100px;
+    min-height: 10px;
   }
 
   .topic4-title {
-    font-size: 2rem;
+    font-size: 1rem;
   }
 
   .topic4-img {

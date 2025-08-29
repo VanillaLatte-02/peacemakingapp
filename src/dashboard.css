@@ -159,7 +159,7 @@ body,
   }
 
   .dashboard-header h2 {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .dashboard-btn-full {
@@ -178,7 +178,7 @@ body,
 
   .dashboard-language-dropdown {
     top: 32px;
-    right: 32px;
+    right: 64px;
     width: 140px;
     height: 50px;
     font-size: 0.7rem;
@@ -187,8 +187,8 @@ body,
   }
 
   .dashboard-logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
   }
 }
 
