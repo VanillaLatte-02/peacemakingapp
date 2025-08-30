@@ -20,23 +20,23 @@ export default function Topic2Content12() {
     <div className="topic2-container">
       <div className="topic2-header">
         <div className="topic2-title-group">
-          <Link to="/choosetopic" className="arrow-btn-top-left" >
+          <Link to="/choosetopic" className="topic2-arrow-btn-top-left" >
             <MdChevronLeft />
           </Link>
           <div className="topic2-title">{topic2texts[lang].titlecontent}</div>
         </div>
         {/* Arrows di header, hanya tampil di desktop */}
         <div className="topic2-arrows desktop-only">
-          <Link to="/topic2/content1" className="arrow-btn-startend" >
+          <Link to="/topic2/content1" className="topic2-arrow-btn-startend" >
             <MdKeyboardDoubleArrowLeft />
           </Link>
-          <Link to="/topic2/content11" className="arrow-btn" >
+          <Link to="/topic2/content11" className="topic2-arrow-btn" >
             <MdChevronLeft />
           </Link>
-          <Link to="/choosetopic" className="arrow-btn" >
+          <Link to="/choosetopic" className="topic2-arrow-btn" >
             <MdChevronRight />
           </Link>
-          <Link to="/choosetopic" className="arrow-btn-startend" >
+          <Link to="/choosetopic" className="topic2-arrow-btn-startend" >
             <MdKeyboardDoubleArrowRight />
           </Link>
         </div>
@@ -68,16 +68,16 @@ export default function Topic2Content12() {
 
       {/* Navigation Arrows for mobile interfacew */}
       <div className="topic2-arrows-bottom mobile-only">
-        <Link to="/topic2/content1" className="arrow-btn-startend" >
+        <Link to="/topic2/content1" className="topic2-arrow-btn-startend" >
           <MdKeyboardDoubleArrowLeft />
         </Link>
-        <Link to="/topic2/content11" className="arrow-btn">
+        <Link to="/topic2/content11" className="topic2-arrow-btn">
           <MdChevronLeft />
         </Link>
-        <Link to="/choosetopic" className="arrow-btn" >
+        <Link to="/choosetopic" className="topic2-arrow-btn" >
           <MdChevronRight />
         </Link>
-        <Link to="/choosetopic" className="arrow-btn-startend" >
+        <Link to="/choosetopic" className="topic2-arrow-btn-startend" >
           <MdKeyboardDoubleArrowRight />
         </Link>
       </div>

@@ -63,8 +63,8 @@ body {
   height: 64px;
 }
 
-.arrow-btn,
-.arrow-btn-startend {
+.topic1-arrow-btn,
+.topic1-arrow-btn-startend {
   border: none;
   color: var(--content-text-color);
   border-radius: 50%;
@@ -266,11 +266,32 @@ body {
     transition: background 0.3s, transform 0.3s;
   }
 
-  .desktop-only {
-    display: none;
+  .topic1-arrow-btn-top-left {
+    border: none;
+    color: var(--content-text-color);
+    border-radius: 50%;
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #fff;
+    background: var(--background-arrow-btn-top-left);
   }
 
-  .mobile-only {
+  .topic1-arrow-btn,
+  .topic1-arrow-btn-startend {
+    border: none;
+    color: var(--content-text-color);
+    border-radius: 50%;
+    font-size: 36px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }

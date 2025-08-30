@@ -20,23 +20,23 @@ export default function Subtopic4Content4() {
     <div className="subtopic4-container">
       <div className="subtopic4-header">
         <div className="subtopic4-title-group">
-          <Link to="/choosesubtopic_topic3" className="arrow-btn-top-left">
+          <Link to="/choosesubtopic_topic3" className="subtopic4-arrow-btn-top-left">
             <MdChevronLeft />
           </Link>
           <div className="subtopic4-title">{subtopic4texts[lang].titlecontent}</div>
         </div>
         {/* Arrows di header, hanya tampil di desktop */}
         <div className="subtopic4-arrows desktop-only">
-          <Link to="/subtopic4/content1" className="arrow-btn-startend" >
+          <Link to="/subtopic4/content1" className="subtopic4-arrow-btn-startend" >
             <MdKeyboardDoubleArrowLeft />
           </Link>
-          <Link to="/subtopic4/content3" className="arrow-btn" >
+          <Link to="/subtopic4/content3" className="subtopic4-arrow-btn" >
             <MdChevronLeft />
           </Link>
-          <Link to="/subtopic4/content5" className="arrow-btn" >
+          <Link to="/subtopic4/content5" className="subtopic4-arrow-btn" >
             <MdChevronRight />
           </Link>
-          <Link to="/subtopic4/content7" className="arrow-btn-startend" >
+          <Link to="/subtopic4/content7" className="subtopic4-arrow-btn-startend" >
             <MdKeyboardDoubleArrowRight />
           </Link>
         </div>
@@ -67,17 +67,17 @@ export default function Subtopic4Content4() {
       })()}
 
       {/* Navigation Arrows for mobile interfacew */}
-      <div className="subtopic2-arrows-bottom mobile-only">
-        <Link to="/subtopic4/content1" className="arrow-btn-startend" >
+      <div className="subtopic4-arrows-bottom mobile-only">
+        <Link to="/subtopic4/content1" className="subtopic4-arrow-btn-startend" >
           <MdKeyboardDoubleArrowLeft />
         </Link>
-        <Link to="/subtopic4/content3" className="arrow-btn">
+        <Link to="/subtopic4/content3" className="subtopic4-arrow-btn">
           <MdChevronLeft />
         </Link>
-        <Link to="/subtopic4/content5" className="arrow-btn" >
+        <Link to="/subtopic4/content5" className="subtopic4-arrow-btn" >
           <MdChevronRight />
         </Link>
-        <Link to="/subtopic4/content7" className="arrow-btn-startend" >
+        <Link to="/subtopic4/content7" className="subtopic4-arrow-btn-startend" >
           <MdKeyboardDoubleArrowRight />
         </Link>
       </div>

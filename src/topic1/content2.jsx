@@ -21,23 +21,23 @@ export default function Topic1Content2() {
     <div className="topic1-container">
       <div className="topic1-header">
         <div className="topic1-title-group">
-          <Link to="/choosetopic" className="arrow-btn-top-left">
+          <Link to="/choosetopic" className="topic1-arrow-btn-top-left">
             <MdChevronLeft />
           </Link>
           <div className="topic1-title">{topic1texts[lang].titlecontent}</div>
         </div>
         {/* Arrows di header, hanya tampil di desktop */}
         <div className="topic1-arrows desktop-only">
-          <Link to="/topic1/content1" className="arrow-btn-startend" >
+          <Link to="/topic1/content1" className="topic1-arrow-btn-startend" >
             <MdKeyboardDoubleArrowLeft />
           </Link>
-          <Link to="/topic1/content1" className="arrow-btn" >
+          <Link to="/topic1/content1" className="topic1-arrow-btn" >
             <MdChevronLeft />
           </Link>
-          <Link to="/choosetopic" className="arrow-btn" >
+          <Link to="/choosetopic" className="topic1-arrow-btn" >
             <MdChevronRight />
           </Link>
-          <Link to="/choosetopic" className="arrow-btn-startend" >
+          <Link to="/choosetopic" className="topic1-arrow-btn-startend" >
             <MdKeyboardDoubleArrowRight />
           </Link>
         </div>
@@ -69,16 +69,16 @@ export default function Topic1Content2() {
 
       {/* Navigation Arrows for mobile interfacew */}
       <div className="topic1-arrows-bottom mobile-only">
-        <Link to="/topic1/content1" className="arrow-btn-startend" >
+        <Link to="/topic1/content1" className="topic1-arrow-btn-startend" >
           <MdKeyboardDoubleArrowLeft />
         </Link>
-        <Link to="/topic1/content1" className="arrow-btn">
+        <Link to="/topic1/content1" className="topic1-arrow-btn">
           <MdChevronLeft />
         </Link>
-        <Link to="/choosetopic" className="arrow-btn" >
+        <Link to="/choosetopic" className="topic1-arrow-btn" >
           <MdChevronRight />
         </Link>
-        <Link to="/choosetopic" className="arrow-btn-startend" >
+        <Link to="/choosetopic" className="topic1-arrow-btn-startend" >
           <MdKeyboardDoubleArrowRight />
         </Link>
       </div>

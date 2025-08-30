@@ -9,7 +9,6 @@ body {
   min-height: 100vh;
   min-height: 100dvh;
   min-height: 100svh;
-  overflow: hidden;
 }
 
 .choose-topic-container {
@@ -116,7 +115,7 @@ body {
 }
 
 
-@media (max-width: 600px) and (orientation: portrait) {
+@media (max-width: 600px) {
   .choose-logo {
     width: 150px;
     height: 150px;
