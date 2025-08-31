@@ -1,13 +1,19 @@
 @import './colors.css';
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  min-height: 100svh;
+}
+
 .choose-subtopic-topic3-container {
   display: flex;
-  min-height: 100vh;
-  /* fallback */
-  min-height: 100dvh;
-  /* modern browsers */
-  min-height: 100svh;
-  width: 100vw;
+  width: 100%;
+  height: 100%;
   overflow: hidden;
   padding-top: max(env(safe-area-inset-top, 16px));
   padding-bottom: max(env(safe-area-inset-bottom, 16px));
@@ -191,7 +197,7 @@
 }
 
 @media (min-width:601px) and (max-width: 1024px) {
-   .choose-logo {
+   .choose-subtopic-topic3-logo {
     width: 270px;
     height: 270px;
   }
@@ -266,8 +272,17 @@
 
 /* Phone Landscape */
 @media (max-width: 932px) and (orientation: landscape) {
+  .choose-subtopic-topic3-logo {
+    width: 180px !important;
+    height: 180px !important;
+    object-fit: cover !important;
+  }
+
   .choose-subtopic-topic3-container {
     flex-direction: row !important;
+    min-height: 0 !important;
+    padding-bottom: max(env(safe-area-inset-bottom, 16px));
+    /* baru */
   }
 
   .choose-subtopic-topic3-left {
@@ -279,14 +294,8 @@
 
   .choose-subtopic-topic3-left h2 {
     color: var(--text-color);
-    font-size: 1.4rem;
+    font-size: 1rem;
     text-align: center;
-  }
-
-  .choose-subtopic-topic3-logo {
-    width: 220px !important;
-    height: 220px !important;
-    object-fit: cover !important;
   }
 
   .choose-subtopic-topic3-right,
