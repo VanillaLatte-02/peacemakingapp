@@ -229,7 +229,8 @@ body {
   }
   .topic2-img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
   }
    .topic2-arrows-bottom {
     padding: 16px 0;

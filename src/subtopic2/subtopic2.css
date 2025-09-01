@@ -237,7 +237,8 @@ body {
 
   .subtopic2-img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: contain;
   }
 
   .subtopic2-arrows-bottom {
