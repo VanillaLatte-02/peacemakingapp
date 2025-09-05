@@ -20,8 +20,8 @@ Codes are divided into 3 main parts:
 2. **subtopic1-4**  
     Folders for subtopic contents:  
     - Subtopic 1: *Identify planks in my own eye & heart responses to conflict*  
-    - Subtopic 2: *Subtopic 2 title*  
-    - Subtopic 3: *Subtopic 3 title*  
+    - Subtopic 2: *Reconcile relationships*  
+    - Subtopic 3: *Preparing to make peace*  
     - Subtopic 4: *Resolve differences*
 
 3. **texts**  
@@ -29,7 +29,7 @@ Codes are divided into 3 main parts:
 
 4. **topic1, topic2, topic4**  
     Folders for topic contents:  
-    - Topic 1: *Personal Peacemaking Topics*  
+    - Topic 1: *Conflict as opportunity*  
     - Topic 2: *Responses to Conflict*  
     - Topic 4: *Cultural Considerations*
 
