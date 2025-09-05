@@ -6,7 +6,7 @@ import choosetopictexts from './texts/choosetopictexts'
 import './choosetopic.css'
 import language from './texts/language';  
 
-// images lain
+// other images
 import logo from './images/logoWhite.png';
 import mainBackground from './images/mainBackground.png';
 
@@ -14,7 +14,7 @@ function ChooseTopic() {
   const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'id');
   return (
     <div className="choose-topic-container">
-      {/* Kolom Kiri */}
+      {/* Left column */}
       <div className="choose-topic-left"
         style={{
           backgroundImage: `url(${mainBackground})`,
@@ -31,7 +31,7 @@ function ChooseTopic() {
         </img>
         <h2>{choosetopictexts[lang].title}</h2>
       </div>
-      {/* Kolom Kanan */}
+      {/* Right column */}
       <div className="choose-topic-right desktop-only">
         <Link to="/topic1/content1" className="choose-btn">{choosetopictexts[lang].button1}</Link>
         <Link to="/topic2/content1" className="choose-btn">{choosetopictexts[lang].button2}</Link>

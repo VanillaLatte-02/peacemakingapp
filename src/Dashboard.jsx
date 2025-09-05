@@ -10,19 +10,22 @@ import mainBackground from './images/mainBackground.png';
 import logo from './images/logoWhite.png';
 
 export default function Dashboard() {
-  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'id');
-
+  // State for selected language, default to 'en' (English)
+  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'en');
+  
+  // Handle language change
   const handleLangChange = (e) => {
     setLang(e.target.value);
     localStorage.setItem('lang', e.target.value);
   };
 
+  // Texts based on selected language
   const appname = maintexts[lang].appname
   const mainbutton = maintexts[lang].mainbutton
 
   return (
     <div className="dashboard-container">
-      {/* Baris 1 */}
+      {/* First row */}
       <div className="dashboard-header"  style={{
                 backgroundImage: `url(${mainBackground})`,
                 backgroundSize: 'cover',
@@ -47,7 +50,7 @@ export default function Dashboard() {
           ))}
         </select>
       </div>
-      {/* Baris 2 */}
+      {/* Second row */}
       <div className="dashboard-actions">
         <Link to="/choosetopic" className="dashboard-btn dashboard-btn-full">
           {mainbutton}
