@@ -11,7 +11,7 @@ import logo from './images/logoWhite.png';
 import mainBackground from './images/mainBackground.png';
 
 function ChooseSubTopic_Topic3() {
-  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'id');
+  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'en');
   return (
     <div className="choose-subtopic-topic3-container">
       {/* Kolom Kiri */}

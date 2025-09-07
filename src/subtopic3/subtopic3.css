@@ -2,11 +2,13 @@ html,
 body {
   margin: 0;
   padding: 0;
-  height: 100%;
+  /* height: 100%; */
+  /* scroll */
   min-height: 100vh;
   min-height: 100dvh;
   min-height: 100svh;
-  overflow: hidden;
+  overflow: auto;
+  /* scroll: changed from hidden */
 }
 
 .subtopic3-container {
@@ -99,21 +101,24 @@ body {
 .subtopic3-body {
   background: var(--background1-color);
   flex: 1 1 auto;
+  overflow: auto;
+  /* scroll: changed from hidden */
+  min-height: 0;
   display: flex;
   /* flex-direction: column; */
   align-items: center;
   justify-content: center;
-  min-height: 0;
-  overflow: hidden;
   padding-bottom: 0;
 }
 
 .subtopic3-img {
   width: 100%;
   height: 100%;
+  /* scroll: changed from auto */
   aspect-ratio: 16 / 9;
   /* object-fit: cover; */
-  /* object-fit: fill; */
+  object-fit: fill;
+  /* new: fill for desktop */
   display: block;
 }
 
@@ -194,7 +199,7 @@ body {
 }
 
 
-@media (max-width: 600px) {
+@media (max-width: 600px) and (orientation: portrait) {
   .subtopic3-header {
     padding: 8px 8px;
   }
@@ -296,5 +301,45 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+}
+
+/* new change for scrolling */
+@media (max-width: 932px) and (orientation: landscape) {
+
+  .subtopic3-body,
+  .scroll-img-container {
+    flex: 1 1 auto !important;
+    min-height: 0 !important;
+    overflow: auto !important;
+  }
+
+  .subtopic3-img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
+  }
+}
+
+/* new tablet landscape, centered image */
+@media (min-width: 933px) and (max-width: 1366px) and (orientation: landscape) {
+
+  .subtopic3-body,
+  .scroll-img-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    height: 100% !important;
+    min-height: 0 !important;
+  }
+
+  .subtopic3-img {
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+    display: block !important;
   }
 }

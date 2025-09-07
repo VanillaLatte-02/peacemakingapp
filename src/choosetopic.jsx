@@ -11,7 +11,7 @@ import logo from './images/logoWhite.png';
 import mainBackground from './images/mainBackground.png';
 
 function ChooseTopic() {
-  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'id');
+  const [lang, setLang] = useState(() => localStorage.getItem('lang') || 'en');
   return (
     <div className="choose-topic-container">
       {/* Left column */}

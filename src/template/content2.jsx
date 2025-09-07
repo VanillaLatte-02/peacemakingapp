@@ -7,7 +7,7 @@ import topic1texts from '../texts/topic1texts'
 import './topic1.css'
 
 export default function Content2() {
-  const [lang] = useState(() => localStorage.getItem('lang') || 'id')
+  const [lang] = useState(() => localStorage.getItem('lang') || 'en')
   const [showInfo, setShowInfo] = useState(false);
   const navigate = useNavigate();
   const handlers = useSwipeable({

@@ -8,7 +8,7 @@ import images from '../images';
 
 
 export default function Subtopic1Content8() {
-  const lang = localStorage.getItem('lang') || 'id'
+  const lang = localStorage.getItem('lang') || 'en'
 
   const navigate = useNavigate();
   const handlers = useSwipeable({

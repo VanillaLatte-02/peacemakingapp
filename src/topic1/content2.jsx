@@ -9,7 +9,7 @@ import { act } from 'react'
 
 
 export default function Topic1Content2() {
-  const lang = localStorage.getItem('lang') || 'id'
+  const lang = localStorage.getItem('lang') || 'en'
 
   const navigate = useNavigate();
   const handlers = useSwipeable({
