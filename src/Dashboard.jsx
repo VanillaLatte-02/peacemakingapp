@@ -6,8 +6,7 @@ import languageOptions from './texts/language'
 import './dashboard.css'
 
 // images lain
-import mainBackground from './images/mainBackground.png';
-import logo from './images/logoWhite.png';
+import imagePaths from './texts/imagePaths'
 
 export default function Dashboard() {
   // State for selected language, default to 'en' (English)
@@ -23,20 +22,24 @@ export default function Dashboard() {
   const appname = maintexts[lang].appname
   const mainbutton = maintexts[lang].mainbutton
 
+  // Keep background static; swap logo per language
+  const backgroundImg = imagePaths.defaultBackground
+  const logoImg = imagePaths.langs[lang]?.logo || imagePaths.logo
+
   return (
     <div className="dashboard-container">
       {/* First row */}
       <div className="dashboard-header"  style={{
-                backgroundImage: `url(${mainBackground})`,
+                backgroundImage: `url(${backgroundImg})`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
               }}>
         <img
-          src={logo}
+          src={logoImg}
           alt="Peacemaking App Logo"
           className="dashboard-logo">
         </img>
-        <h2>{appname}</h2>
+        {/* <h2>{appname}</h2> */}
         {/* Dropdown Language */}
         <select
           className={"dashboard-language-dropdown"}

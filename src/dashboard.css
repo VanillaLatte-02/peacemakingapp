@@ -35,8 +35,8 @@ body,
 }
 
 .dashboard-logo {
-  width: 300px;
-  height: 300px;
+  width: 1214px;
+  height: 205px;
   object-fit: cover;
 }
 
@@ -143,8 +143,11 @@ body,
   }
 
   .dashboard-logo {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 60px;
+    object-fit: contain;
+    /* width: 200px;
+    height: 200px; */
   }
 }
 
@@ -189,8 +192,10 @@ body,
   }
 
   .dashboard-logo {
-    width: 100px;
-    height: 100px;
+    width: 400px;
+    height: 70px;
+    /* width: 100px;
+    height: 100px; */
   }
 }
 
@@ -234,8 +239,10 @@ body,
   }
 
   .dashboard-logo {
-    width: 350px;
-    height: 350px;
+    width: 600px;
+    height: 100px;
+    /* width: 350px;
+    height: 350px; */
   }
 }
 
@@ -273,15 +280,17 @@ body,
   .dashboard-language-dropdown {
     top: 32px;
     right: 32px;
-    width: 300px;
-    height: 80px;
-    font-size: 1.5rem;
+    width: 200px;
+    height: 50px;
+    font-size: 1rem;
     border-width: 2px;
   }
 
   .dashboard-logo {
-    width: 180px;
-    height: 180px;
+    /* width: 180px;
+    height: 180px; */
+    width: 600px;
+    height: 100px;
   }
 }
 
@@ -325,8 +334,10 @@ body,
   }
 
   .dashboard-logo {
-    width: 300px;
-    height: 300px;
+    width: 800px;
+    height: 130px;
+    /* width: 300px;
+    height: 300px; */
   }
 }
 

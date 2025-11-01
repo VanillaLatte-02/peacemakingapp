@@ -12,7 +12,7 @@ export default function Topic4Content7() {
 
   const navigate = useNavigate();
   const handlers = useSwipeable({
-    onSwipedLeft: () => { },
+    onSwipedLeft: () => navigate('/choosetopic'),
     onSwipedRight: () => navigate('/topic4/content6'),
     trackMouse: true
   });

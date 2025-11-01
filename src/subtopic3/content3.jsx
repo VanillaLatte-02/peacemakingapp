@@ -12,7 +12,7 @@ export default function Subtopic3Content3() {
 
   const navigate = useNavigate();
   const handlers = useSwipeable({
-    onSwipedLeft: () => { },
+    onSwipedLeft: () => navigate('/choosesubtopic_topic3'),
     onSwipedRight: () => navigate('/subtopic3/content2'),
     trackMouse: true
   });

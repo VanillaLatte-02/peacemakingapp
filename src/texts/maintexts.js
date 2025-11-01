@@ -17,7 +17,7 @@ const maintexts = {
   },
   es: {
     appname: "PACIFICADORES",
-    mainbutton: "PERSONAL"
+    mainbutton: "INTERPERSONAL"
   },
   pt: {
     appname: "APLICATIVO DE RECONCILIAÇÃO",

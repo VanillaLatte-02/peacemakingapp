@@ -28,9 +28,9 @@ const choosetopictexts = {
     button4: "MAZINGIRA YA KISWAHILI"
   },
   es: {
-    title: "TEMAS DE PACIFICACIÓN PERSONAL",
+    title: "TEMAS DE PACIFICACIÓN INTERPERSONAL",
     button1: "EL CONFLICTO COMO OPORTUNIDAD",
-    button2: "ESPUESTAS AL CONFLICTO",
+    button2: "RESPUESTAS AL CONFLICTO",
     button3: "PASOS PARA HACER LA PAZ",
     button4: "CONSIDERACIONES CULTURALES"
   },

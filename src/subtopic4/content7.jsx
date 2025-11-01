@@ -12,7 +12,7 @@ export default function Subtopic4Content7() {
 
   const navigate = useNavigate();
   const handlers = useSwipeable({
-    onSwipedLeft: () => { },
+    onSwipedLeft: () => navigate('/choosetopic'),
     onSwipedRight: () => navigate('/subtopic4/content6'),
     trackMouse: true
   });
@@ -33,10 +33,10 @@ export default function Subtopic4Content7() {
           <Link to="/subtopic4/content6" className="subtopic4-arrow-btn" >
             <MdChevronLeft />
           </Link>
-          <Link to="/choosesubtopic_topic3" className="subtopic4-arrow-btn" >
+          <Link to="/choosetopic" className="subtopic4-arrow-btn" >
             <MdChevronRight />
           </Link>
-          <Link to="/choosesubtopic_topic3" className="subtopic4-arrow-btn-startend" >
+          <Link to="/choosetopic" className="subtopic4-arrow-btn-startend" >
             <MdKeyboardDoubleArrowRight />
           </Link>
         </div>
@@ -74,10 +74,10 @@ export default function Subtopic4Content7() {
         <Link to="/subtopic4/content6" className="subtopic4-arrow-btn">
           <MdChevronLeft />
         </Link>
-        <Link to="/choosesubtopic_topic3" className="subtopic4-arrow-btn" >
+        <Link to="/choosetopic" className="subtopic4-arrow-btn" >
           <MdChevronRight />
         </Link>
-        <Link to="/choosesubtopic_topic3" className="subtopic4-arrow-btn-startend" >
+        <Link to="/choosetopic" className="subtopic4-arrow-btn-startend" >
           <MdKeyboardDoubleArrowRight />
         </Link>
       </div>
